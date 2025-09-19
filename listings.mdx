@@ -1,0 +1,152 @@
+---
+title: "Listings"
+description: "Learn how to manage listings in DirectoryEasy"
+---
+
+# Management Guide
+
+### Listings: How to use this section
+
+Manage everything about your directory's listings: add, import/export, edit, change status, feature, update plans, and delete.
+
+#### Top toolbar
+
+* **Search box**: Filter by listing name.
+* **Import CSV**: Upload a spreadsheet of listings and map your columns to the system fields. You'll see live validation and a progress bar.
+* **Export CSV**: Download all current listings as a CSV file.
+* **Download CSV Template**: Get a ready-to-fill template with all the fields your directory supports (including custom fields).
+* **Add New Listing**: Create a listing manually with a form.
+* **Columns**: Show/hide table columns to customize your view.
+* **Delete Selected**: Remove the listings you've checked. You can also choose to delete associated images.
+* **Delete All**: Appears when all rows on the current page are selected; removes all currently listed items.
+* **Update Selected (admins)**: Bulk-update Status/Featured/Subscription Plan for checked listings.
+
+#### Table row actions (three dots on each row)
+
+* **View Listing**: Opens the public page (only when published).
+* **Change Status (admins)**: Approve, Publish, Reject, or set Pending for that listing.
+* **Edit**: Open an editor to update the listing details.
+* **Delete**: Remove the listing (with optional image deletion).
+
+#### Editing a listing
+
+* Opens an editor with sections for basic info, contact, media, categories/tags, location, social links, pricing, coupons, and optional SEO fields.
+* Save to apply changes; the list refreshes automatically.
+
+#### Update Status (admins)
+
+* **Status options**: Pending, Approved, Published, Rejected.
+* **Email notifications**: If your directory's email settings are active, you can send an email to the submitter:
+  * **Rejected**: Provide rejection reasons (required if sending email).
+  * **Approved/Published**: Optionally note modifications made.
+
+#### Feature settings
+
+* **Featured**: Mark a listing as featured to highlight it.
+* **Expiration date**: Set when the featured status should end.
+* **Exempt from automation**: Keep this listing out of any automatic featuring/unfeaturing rules.
+
+#### Subscription Plan
+
+* Choose a plan for the listing from your available directory plans (e.g., Free, Starter, Pro).
+* Saves and reflects on the listing card/visibility rules where applicable.
+
+#### CSV import
+
+* **Choose file**: Upload a .csv file.
+* **Map columns**: Match each CSV column to a system field. Required fields must be mapped before you can continue.
+* **Allow duplicates**: Turn on if you want to import listings that have the same name as existing ones. Otherwise, duplicates are skipped.
+* **Progress**: Imports in batches with a live progress bar and estimated time.
+* **Results**: See how many were imported, skipped (duplicates), or failed, with per-row error details.
+* Notes:
+  * Special characters (e.g., accents) are handled automatically.
+  * Large imports might take a while; don't close the dialog until complete.
+
+#### CSV export
+
+Downloads all listings with the fields available in your directory, including basic info, categorization, pricing, links, coupons, contact, location, social, status/flags, SEO (if enabled), and any active custom fields.
+
+#### CSV template
+
+* A single-row starter file with the right headers for your directory.
+* Use it to see exactly which columns are expected and how to format values (e.g., categories/tags as comma-separated lists).
+
+#### Required fields
+
+* **What's required**: At minimum, Name and Categories are required. Your directory may require more fields (including custom ones).
+* **Who sets this**: The directory owner configures which fields are enabled and required in the Edit Directory → Fields tab. Also, When adding a custom field (in Custom Fields), you can choose whether it's required or optional.
+* **During import**: You must map all required fields; otherwise the import button stays disabled. The template and mapping panel will indicate what's required.
+
+#### Default CSV fields explained
+
+* Basic
+  * **name**: Listing name (required).
+  * **description**: Short description.
+  * **detailedDescription**: Long-form description.
+  * **logo**: URL of the logo image.
+  * **images**: Comma-separated URLs of additional images.
+  * **video**: URL to a video (e.g., YouTube).
+* Categorization
+  * **categories**: Comma-separated category names (required). Names should match your directory categories.
+  * **tags**: Comma-separated tag names; new tags may be created.
+* Pricing & links
+  * **lowestPrice**: Lowest price (number). If exporting, it may be price/100.
+  * **pricingModel**: e.g., Free, One-time, Monthly, Yearly.
+  * **mainLink**: Primary website URL.
+  * **demoLink**: Demo/trial URL.
+* Coupons
+  * **coupon\_code**: Discount code.
+  * **coupon\_offer**: Discount description (e.g., 20% off).
+* Status & flags
+  * **status**: PENDING, APPROVED, PUBLISHED, or REJECTED.
+  * **isFeatured**: true or false.
+  * **rejectionReasons**: Why the listing was rejected (used with REJECTED).
+  * **modificationsMade**: Note of admin changes (for APPROVED/PUBLISHED emails).
+  * **exemptFromAutomation**: true or false to opt-out of auto featuring/unfeaturing.
+* Contact
+  * **contact\_name**: Contact person's name.
+  * **contact\_email**: Contact email.
+  * **contact\_phone**: Contact phone.
+* Location & business
+  * **location\_address**: Street address or general address.
+  * **location\_latitude**: Latitude (decimal).
+  * **location\_longitude**: Longitude (decimal).
+  * **operating\_hours**: Open hours text (e.g., Mon–Fri 9–5).
+  * **business\_phone**: Business phone number (public-facing).
+* Social
+  * **socialMedia\_x**: X/Twitter handle or URL.
+  * **socialMedia\_facebook**: Facebook page URL.
+  * **socialMedia\_instagram**: Instagram profile URL.
+  * **socialMedia\_linkedin**: LinkedIn page URL.
+  * **socialMedia\_youtube**: YouTube channel/video URL.
+  * **socialMedia\_github**: GitHub profile/repo URL.
+  * **socialMedia\_tiktok**: TikTok profile URL.
+  * **socialMedia\_pinterest**: Pinterest profile/board URL.
+  * **socialMedia\_snapchat**: Snapchat profile URL.
+  * **socialMedia\_reddit**: Reddit profile/subreddit URL.
+  * **socialMedia\_medium**: Medium profile/publication URL.
+  * **socialMedia\_telegram**: Telegram channel/group URL.
+  * **socialMedia\_discord**: Discord invite URL.
+* SEO (optional)
+  * **seoTitle**: SEO page title.
+  * **seoDescription**: SEO meta description.
+  * **seoKeywords**: Comma-separated keywords.
+  * **focusKeyword**: Main keyword for the page.
+  * **ogTitle**: Open Graph title.
+  * **ogDescription**: Open Graph description.
+  * **twitterTitle**: Twitter card title.
+  * **twitterDescription**: Twitter card description.
+  * **twitterCard**: twitter card type (e.g., summary\_large\_image).
+  * **canonicalUrl**: Canonical URL.
+  * **noIndex**: true/false to prevent indexing.
+  * **noFollow**: true/false to prevent following links.
+  * **schemaType**: Schema.org type (e.g., Product).
+* Custom fields
+  * **custom\_**: One column per active custom field in your directory (e.g., `custom_color`). If a custom field is marked required, you must provide a value during import.
+
+#### Tips and troubleshooting
+
+* **Missing required fields**: Map all required columns in the import dialog before continuing.
+* **Categories/tags**: Use comma-separated names; unknown names are handled gracefully (new tags may be created).
+* **Duplicates**: Disable "Allow duplicates" to skip rows with names that already exist.
+* **Encoding**: If you see odd characters in your CSV, re-export as UTF‑8; the importer also tries to auto-fix common encodings.
