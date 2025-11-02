@@ -17,6 +17,7 @@
             "group": "Getting started",
             "pages": [
               "pages/creating-directory",
+              "pages/configuring-directory-email",
               "pages/listings",
               "pages/analytics",
               "pages/coming-soon"
