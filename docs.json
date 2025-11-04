@@ -18,6 +18,7 @@
             "pages": [
               "pages/creating-directory",
               "pages/configuring-directory-email",
+              "pages/members-dashboard",
               "pages/listings",
               "pages/analytics",
               "pages/coming-soon"
