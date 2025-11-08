@@ -1,0 +1,130 @@
+---
+title: "Adding Listings and Custom Fields"
+description: "Learn how to control listing submissions and build custom fields in your directory"
+---
+
+# Adding Listings and Custom Fields
+
+<div style={{ textAlign: 'center', margin: '2rem 0' }}>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/3v-1DJOU7JI"
+    title="Adding Listings and Custom Fields"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{ maxWidth: '100%', borderRadius: '8px' }}
+  ></iframe>
+</div>
+
+Three types of users can submit listings in DirectoryEasy: the directory owner, registered members, and visitors. You can tailor who is allowed to submit, how listings are reviewed, and which information must be collected.
+
+## Choose Who Can Submit Listings
+
+1. Open your dashboard sidebar and go to **Customization → Misc → Listings**.
+2. Use the **Who can submit listings** setting to choose one of these modes:
+   * **Owner only**: hide the public submission button and keep the sign-up page inaccessible.
+   * **Owner + members**: require users to sign in or create an account before submitting.
+   * **Anyone**: allow guests to submit without signing up (submissions still enter review).
+3. Decide whether submissions are publicly visible right away or only after users create an account.
+
+> Tip: Even when guests can submit, every listing enters the review queue first—nothing publishes without your approval.
+
+## Visitor Submission Flow
+
+When public submissions are allowed, visitors click the **Submit your listing** button (the label is fully customizable). They complete a comprehensive form with all the fields you currently enable. Required steps:
+
+1. Fill in the mandatory fields (listing name is always required).
+2. Provide optional details like pricing, coupons, or other custom information if enabled.
+3. Click **Submit listing**. The new listing enters the **Pending** state.
+
+## Control Built-In Fields
+
+To adjust the default form:
+
+1. Go to **Edit Directory → Fields**.
+2. Review every built-in field grouped by tabs.
+3. Toggle each field to **Enabled/Disabled** or set it to **Optional/Required**.
+
+You can tailor the form to match the data your directory needs while keeping the experience streamlined for submitters.
+
+## Review and Publish Submissions
+
+Inside the owner dashboard:
+
+* Find new submissions in the listings table with status **Pending**.
+* Choose one of three actions:
+  * **Reject**: Optionally send the submitter a message explaining the decision.
+  * **Approve**: Mark as reviewed but keep it hidden until a later date.
+  * **Publish**: Make it live immediately.
+
+### Approved vs. Published
+
+* **Approved** means you have reviewed and accepted the content. You can schedule it to publish automatically after a set delay (for example, 60 days for free plans). Automation rules live in the **Automations** section.
+* **Published** listings are visible to the public right away.
+
+When you publish, you can email the submitter with a temporary edit link. If they make changes, the listing returns to the Pending state so you can re-review it.
+
+## Member-Only Submissions
+
+When submissions are limited to members:
+
+* The public submission button redirects to the sign-up page.
+* Users create an account (or sign in) before accessing the form.
+
+This is ideal when you want tighter control while still enabling community contributions.
+
+## Owner-Only Submissions
+
+Switching to owner-only mode hides the submission button entirely, and visitors cannot access the sign-up screen. Use this when you prefer to curate listings manually.
+
+## Custom Fields Overview
+
+Custom fields capture information beyond the built-in listing attributes. For a restaurant directory, examples include cuisine type, price range, seating capacity, or reservation links. You can organize them into sections (e.g., **Dining Details**, **Amenities**) to keep forms and filters tidy.
+
+### Access Custom Fields
+
+1. Open **Customization → Custom Fields** from the sidebar.
+2. The interface shows:
+   * **Add Section** and **Add Field** buttons at the top.
+   * A drag-and-drop area to reorder sections and fields.
+
+Existing sections (such as `dining_details`) may already contain required fields—reorder or edit them as needed.
+
+### Create a New Section
+
+1. Click **Add Section**.
+2. Set the **Section ID** (e.g., `dining_details`) and optional description.
+3. Enable **Active** so it appears in forms.
+4. Toggle **Show in Filters** to expose the section in sidebar filters.
+5. Optionally expand the section by default in filters.
+6. Click **Create Section**.
+
+### Add a Custom Field
+
+1. Click **Add Field**.
+2. Enter an internal name (e.g., `cuisine_type`) and a display label (e.g., "Cuisine Type").
+3. Choose a field type (text, number, email, URL, date, textarea, checkbox, list, etc.).
+4. Assign it to the section you created.
+5. Set placeholder text and default value if needed.
+6. Configure visibility:
+   * **Active**: show the field on forms.
+   * **Required**: force users to provide a value.
+   * **Show on listing page** and **Show label** for front-end display.
+   * **Show on cards** for search results (use sparingly for key info).
+   * **Show in filters** to let visitors filter by this field.
+7. Click **Create Field**.
+
+You can edit fields later, adjust labels, change where they appear, or drag them between sections.
+
+## Use Custom Fields in Listings
+
+When a user submits a listing:
+
+1. They see custom sections and fields organized exactly as you configured them.
+2. They complete the relevant information (e.g., cuisine, price range, outdoor seating).
+3. After submission, filters in the directory sidebar include every field marked as filterable.
+4. Listing detail pages display the same structured data, giving visitors a rich overview.
+
+Custom fields, combined with the submission controls above, allow you to design a tailored intake process and keep your directory fresh with high-quality, well-structured listings.

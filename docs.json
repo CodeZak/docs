@@ -19,8 +19,8 @@
               "pages/creating-directory",
               "pages/configuring-directory-email",
               "pages/members-dashboard",
+              "pages/adding-listings",
               "pages/listings",
-              "pages/analytics",
               "pages/coming-soon"
             ]
           }
