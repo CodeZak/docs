@@ -1,0 +1,210 @@
+---
+title: "Managing Listings, Reviews, and Favorites"
+description: "Learn how members can submit reviews, favorite listings, and how to manage listing statuses, verification, and bulk operations"
+---
+
+# Managing Listings, Reviews, and Favorites
+
+<div style={{ textAlign: 'center', margin: '2rem 0' }}>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/FoUwGs8bf_o"
+    title="Managing Listings, Reviews, and Favorites"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    style={{ maxWidth: '100%', borderRadius: '8px' }}
+  ></iframe>
+</div>
+
+DirectoryEasy provides comprehensive tools for managing member interactions, listing reviews, favorites, and bulk operations. This guide covers everything from review moderation to advanced listing management features.
+
+## Member Reviews
+
+Members can easily add reviews to any directory listing. The review system is designed to maintain quality while encouraging community engagement.
+
+### How Reviews Work
+
+1. Members submit reviews through the listing detail page.
+2. Every review is automatically set to **Pending** status until approved.
+3. Directory owners receive instant email notifications when new reviews are submitted.
+4. Reviews become publicly visible only after owner approval.
+
+> **Important**: Ensure your SMTP email settings are properly configured to receive review notifications.
+
+### Approving Reviews
+
+To manage incoming reviews:
+
+1. Open your dashboard sidebar and go to **Reviews**.
+2. Review pending submissions and decide whether to approve or reject them.
+3. Approved reviews become visible to the public immediately.
+
+Listing owners can view reviews left on their own listings directly from their member dashboard, giving them insight into customer feedback.
+
+## Favorites System
+
+The favorites feature allows members to bookmark listings they're interested in for easy access later.
+
+### Using Favorites
+
+* Members can add any listing to their favorites with a single click.
+* All favorited listings are accessible from the member dashboard.
+* This feature helps members track businesses or services they want to remember.
+
+The favorites system is simple and intuitive, requiring no configuration from the directory owner.
+
+## Listing Management Dashboard
+
+After a listing is submitted to your directory, you have powerful tools to manage it individually or in bulk.
+
+### Available Actions
+
+From the listings section, you can:
+
+* **Delete listings**: Remove individual listings or multiple at once.
+* **Change status**: Update listing status one at a time or in bulk.
+* **Export data**: Download listings as CSV files for external use.
+* **Import data**: Upload new listings or updates via CSV.
+
+### Listing Status Options
+
+Every listing can have one of four statuses:
+
+* **Pending**: Newly submitted listings awaiting review.
+* **Rejected**: Listings that don't meet your criteria.
+* **Approved**: Reviewed and accepted, but not yet public.
+* **Published**: Live and visible to all visitors.
+
+> **Remember**: Only published listings are visible to the public. Approved listings remain hidden until you publish them.
+
+## Verification and Claim Settings
+
+The verification toggle controls whether a listing can be claimed by business owners.
+
+### Verified Listings (Toggle Checked)
+
+When a listing is marked as verified:
+
+* The listing is protected from claims by other users.
+* Nobody can claim ownership of this listing.
+* Use this setting for:
+  * Listings you've added yourself as the directory owner.
+  * Listings already claimed by their rightful owners.
+
+> **Note**: When members claim their own listings, this toggle is automatically checked by default.
+
+### Unverified Listings (Toggle Unchecked)
+
+When a listing is unverified:
+
+* The listing becomes available for claiming.
+* Business owners can claim and manage their own listings.
+* Perfect for encouraging business owners to take ownership of their profiles.
+
+## Featured Listings
+
+Featured listings receive special visibility and prominence in your directory, making them valuable for monetization through subscription plans.
+
+### Featured Display Options
+
+You can choose how featured listings appear:
+
+1. **Slider presentation**: Display featured listings in a prominent slider on the homepage.
+2. **Top positioning**: Force listings to stay at the top with a colorful border.
+3. **Both options**: Combine slider and top positioning for maximum visibility.
+
+### Featured Status Settings
+
+* **Featured toggle**: Enable to give the listing premium visibility.
+* **Exempt from automation**: Check this to prevent automation rules from affecting the featured status—useful for listings with permanent featured placement.
+
+> **Tip**: Featured placement is often what you promise members when they subscribe to premium plans, giving their listings more exposure.
+
+We'll cover automation rules for managing featured status in a separate guide.
+
+## Subscription Plans
+
+Assign subscription plans to control which features each listing has access to.
+
+### How Plans Work
+
+1. Select a plan from the dropdown menu in the listing settings.
+2. **Starter**: The default plan assigned to all new listings.
+3. **Other plans**: Unlock additional features like featured placement.
+4. Click **Update** to save your changes.
+
+You can apply plan changes to individual listings or update multiple listings at once using bulk actions.
+
+Configuration of subscription plans and their features is covered in detail in another guide.
+
+## Importing and Exporting Listings
+
+DirectoryEasy supports bulk operations through CSV files, making it easy to migrate existing data or make mass updates.
+
+### Exporting Listings
+
+1. Go to the listings section in your dashboard.
+2. Click the **Export** button to download all listings as a CSV file.
+3. Use this file as a template for future imports or external analysis.
+
+### Importing Listings
+
+The import process supports both new listings and updates to existing ones:
+
+1. Click the **Import** button in the listings section.
+2. Upload your CSV file.
+3. Review the field mapping (if necessary).
+4. Click **Import** to complete the process.
+
+### Best Practices for CSV Imports
+
+For the smoothest import experience, follow these recommendations:
+
+**Option 1: Use the Template**
+
+1. Download the official template from the import page.
+2. Fill it with your data using the correct column names.
+3. Import without needing to map fields manually.
+
+**Option 2: Export and Modify (Recommended)**
+
+1. Submit 2-3 sample listings through the form with all fields filled in.
+2. Export those listings as CSV.
+3. Replace the sample data with your actual scraped or collected data.
+4. Import the file back.
+
+This approach ensures:
+
+* Correct column names that the system recognizes.
+* Proper value formatting (e.g., `false` for unchecked featured status, not `no` or `-1`).
+* Clear reference for how each field should be formatted.
+
+### Field Mapping
+
+If your CSV contains columns not recognized by DirectoryEasy:
+
+1. Create the corresponding custom field first in **Customization → Custom Fields**.
+2. During import, search for your column name in the mapping interface.
+3. Match it to the newly created custom field.
+4. Complete the import.
+
+If column names in your CSV exactly match your custom field names, they'll be automatically mapped without manual intervention.
+
+## Bulk Operations
+
+Apply changes to multiple listings simultaneously:
+
+* **Select multiple listings** using checkboxes.
+* **Update status** for all selected items at once.
+* **Change verification settings** in bulk.
+* **Assign subscription plans** to multiple listings.
+* **Delete unwanted listings** together.
+
+Bulk operations save significant time when managing large directories with hundreds or thousands of listings.
+
+---
+
+With these tools, you can efficiently manage your directory's listings, maintain quality through review moderation, and provide members with a rich, interactive experience.
+
