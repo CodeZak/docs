@@ -1,0 +1,157 @@
+---
+title: "Automation"
+description: "Set up automated workflows to manage listings based on subscription plans"
+---
+
+## Overview
+
+Automation is where DirectoryEasy really shines. It lets you set up workflows that automatically manage your listings - from publishing delays to featured placement - all based on subscription plans.
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/EfbkXza-PxA"
+  title="DirectoryEasy Automation"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+## How Automation Works
+
+When someone submits a new listing, it's automatically assigned to the **Starter** plan. Here's something important to understand:
+
+<Warning>
+Automation rules only kick in for listings with an **Approved** status. If a listing is sitting in Under Review, you'll need to approve it first before any automation happens.
+</Warning>
+
+Once you've approved a listing, you have two paths:
+- **Manual control**: Manage everything manually for complete control
+- **Automatic processing**: Let the system take over and automatically publish listings based on configured rules
+
+### Processing Schedule
+
+The system runs checks **every hour** to update listing statuses. However, if you don't want to wait, you'll see **"Process"** buttons that let you trigger immediate processing. This is handy when you've just approved a batch of listings and want them processed right away.
+
+<Info>
+Both the Publishing Delay and Featured Listing rules work together during processing, and they're applied based on each listing's subscription plan.
+</Info>
+
+## Setting Up Publishing Delays
+
+The Publishing Delay feature is useful when you want a waiting period before listings go live.
+
+### Common Use Case
+
+The typical workflow is:
+- Don't publish free listings until a certain period passes (e.g., one or two months)
+- Submit immediately if users upgrade their listings to a paid plan
+
+### Configuration Steps
+
+1. Navigate to the automation settings for each plan (e.g., "Starter")
+2. Toggle the **Enable** switch on
+3. Set the number of days you want listings to wait
+4. Click **Save Changes**
+
+<Tip>
+For example, if you set 30 days for the Starter plan, approved listings will sit for 30 days before automatically going live.
+</Tip>
+
+### Immediate Processing
+
+If you need to push things through faster, click **"Process Delayed Listings Now"** and the system will immediately publish any listings that are ready.
+
+## Configuring Featured Listings
+
+Featured Listing rules control how long listings get premium placement in your directory. Featured listings appear at the top of search results, in slider sections, or both.
+
+### Setup Process
+
+1. For each plan, toggle the rule on
+2. Set the number of days for featured placement
+3. Save your changes
+
+<Card title="Monetization Example" icon="dollar-sign">
+Let's say you set 7 days for a Premium plan - when those listings publish, they'll automatically be featured for a full week before returning to normal status. You can inform users that after they upgrade their plan, their listings will be featured for 7 days.
+</Card>
+
+### Immediate Processing
+
+The **"Process Featured Listings Now"** button works the same way as with publishing delays. Click it when you want to update featured statuses immediately instead of waiting for the hourly check.
+
+## Practical Example
+
+Here's how it all flows together:
+
+<Steps>
+  <Step title="Listing Submission">
+    A restaurant owner submits their listing. It starts on the Starter plan and goes into **Under Review** status.
+  </Step>
+  
+  <Step title="Approval">
+    You approve the listing, changing its status to **Approved**.
+  </Step>
+  
+  <Step title="Publishing Delay (if configured)">
+    If you've set a 2-day publishing delay for Starter, it waits 2 days then automatically publishes.
+  </Step>
+  
+  <Step title="Featured Period (if configured)">
+    If you've also enabled a 5-day featured period for Starter, it stays featured for 5 days after publishing, then drops back to a regular listing.
+  </Step>
+</Steps>
+
+### Premium Plan Example
+
+Imagine you have a Premium plan with:
+- **No publishing delay** (0 days)
+- **30-day featured period**
+
+Those listings publish immediately and stay featured for a month. That's the power of combining subscription plans with automation.
+
+## Getting Started
+
+<Check>
+Remember to click **"Save Changes"** after you've configured your rules for each subscription plan.
+</Check>
+
+### Best Practices
+
+- **Start simple**: Begin with basic rules for your Starter plan, then customize for premium tiers
+- **Test thoroughly**: Use the "Process Now" buttons to test your automation rules immediately
+- **Monitor regularly**: Check the hourly processing results to ensure automation is working as expected
+- **Communicate clearly**: Make sure your users understand the benefits of upgrading (immediate publishing, longer featured periods, etc.)
+
+### Automation Benefits
+
+<CardGroup cols={2}>
+  <Card title="Time Savings" icon="clock">
+    Eliminate manual listing management tasks
+  </Card>
+  
+  <Card title="Monetization" icon="money-bill">
+    Create clear upgrade incentives with different automation rules
+  </Card>
+  
+  <Card title="Consistency" icon="check-circle">
+    Ensure all listings follow the same rules based on their plan
+  </Card>
+  
+  <Card title="Scalability" icon="chart-line">
+    Handle hundreds of listings without manual intervention
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Tags & Monetization" icon="tag" href="/pages/tags-and-monetization">
+    Learn how to set up pricing tiers
+  </Card>
+  
+  <Card title="Managing Listings" icon="list" href="/pages/managing-listings">
+    Understand listing statuses and manual management
+  </Card>
+</CardGroup>
+
