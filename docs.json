@@ -20,7 +20,8 @@
               "pages/configuring-directory-email",
               "pages/members-dashboard",
               "pages/adding-listings",
-              "pages/listings",
+              "pages/managing-listings",
+              "pages/tags-and-monetization",
               "pages/coming-soon"
             ]
           }
