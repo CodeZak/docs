@@ -21,8 +21,8 @@
               "pages/members-dashboard",
               "pages/adding-listings",
               "pages/managing-listings",
-              "pages/automation",
               "pages/tags-and-monetization",
+              "pages/automation",
               "pages/coming-soon"
             ]
           }
