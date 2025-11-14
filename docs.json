@@ -17,6 +17,7 @@
             "group": "Getting started",
             "pages": [
               "pages/creating-directory",
+              "pages/design-customization",
               "pages/configuring-directory-email",
               "pages/members-dashboard",
               "pages/adding-listings",
