@@ -1,206 +1,725 @@
 ---
-title: "Exploring the Members Dashboard and Features"
-description: "Learn about all the features available in the directory members' dashboard"
+title: "Members Dashboard"
+description: "Complete guide to the member dashboard features and functionality"
 ---
 
-# Exploring the Members Dashboard and Features
+## Overview
 
-<div style={{ textAlign: 'center', margin: '2rem 0' }}>
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/vEEf4GtAbPw"
-    title="Exploring the Members Dashboard and Features"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-    style={{ maxWidth: '100%', borderRadius: '8px' }}
-  ></iframe>
-</div>
+The Members Dashboard is the central hub where directory users manage their listings, reviews, favorites, and account settings. Understanding how members interact with your directory helps you create a better user experience and support your community effectively.
 
-If a user wants to add a listing to favorites, leave a review, or claim their business, they need to create their own account in your directory.
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/vEEf4GtAbPw"
+  title="Members Dashboard Overview"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
 
-## Getting Started
+<Info>
+If a user wants to add a listing to favorites, leave a review, or claim their business, they need to create an account in your directory.
+</Info>
 
-To begin, users need to:
+## Account Creation
 
-1. Head to the sign-up page
-2. Enter their name, email, and password
-3. Click "Create Account"
-4. Confirm their email
-5. Sign in
+New users can easily create an account to access member features.
+
+<Steps>
+  <Step title="Navigate to Sign-Up">
+    Users head to the sign-up page from your directory's main navigation.
+  </Step>
+  
+  <Step title="Enter Information">
+    Fill in required information:
+    - Full name
+    - Email address
+    - Password (secure)
+  </Step>
+  
+  <Step title="Create Account">
+    Click "Create Account" to submit the registration.
+  </Step>
+  
+  <Step title="Confirm Email">
+    Check email inbox for confirmation message and click the verification link.
+  </Step>
+  
+  <Step title="Sign In">
+    Return to the directory and sign in with the new credentials.
+  </Step>
+</Steps>
+
+<Tip>
+Encourage users to verify their email immediately to access all member features without delays.
+</Tip>
 
 ## Dashboard Overview
 
-The dashboard provides quick access to all key metrics in your directory:
+The dashboard provides quick access to all key metrics and activities in your directory.
 
-* **Number of listings** you've added
-* **Favorites** count
-* **Reviews** you've given or received
-* **Active plans** (if you have any subscriptions)
+### Key Metrics at a Glance
 
-When someone subscribes to one of your plans, they get access to a special dashboard where they can manage their plan.
+<CardGroup cols={2}>
+  <Card title="Listings" icon="list">
+    Total number of listings the member has added to the directory
+  </Card>
+  
+  <Card title="Favorites" icon="heart">
+    Count of listings the member has bookmarked for later
+  </Card>
+  
+  <Card title="Reviews" icon="star">
+    Reviews given to other listings or received on owned listings
+  </Card>
+  
+  <Card title="Active Plans" icon="credit-card">
+    Current subscription plans and their status
+  </Card>
+</CardGroup>
 
-The dashboard also shows:
+### Dashboard Activity Feed
 
-* Recent listings
-* Reviews you've given or received
-* Recently added favorites
-* Your latest subscription
+The dashboard shows real-time activity:
 
-You can add new listings, manage existing ones, and access reviews or billing settings using the dashboard buttons or directly from the sidebar.
+<AccordionGroup>
+  <Accordion title="Recent Listings" icon="clock">
+    Displays the member's most recently added or updated listings with quick access to edit or manage them.
+  </Accordion>
+  
+  <Accordion title="Reviews Activity" icon="message">
+    Shows both:
+    - Reviews the member has given to other listings
+    - Reviews received on the member's own listings
+  </Accordion>
+  
+  <Accordion title="Recently Added Favorites" icon="bookmark">
+    Quick access to listings the member has recently bookmarked.
+  </Accordion>
+  
+  <Accordion title="Latest Subscription" icon="receipt">
+    Information about the member's most recent subscription plan, including status and renewal date.
+  </Accordion>
+</AccordionGroup>
+
+### Quick Actions
+
+<Card title="Dashboard Navigation" icon="compass">
+Members can perform key actions directly from the dashboard:
+
+- **Add New Listings**: Submit new entries to the directory
+- **Manage Existing Listings**: Edit, update, or delete listings
+- **Access Reviews**: View and manage review activity
+- **Billing Settings**: Update payment methods and subscriptions
+- **Sidebar Navigation**: Access any feature directly from the sidebar menu
+</Card>
 
 ## Adding a New Listing
 
-The "Add New Listing" section allows you to manually create a new listing. There are other ways to add listings in bulk from client (directory owner) dashbaord:
+Members can submit listings directly through their dashboard. The directory owner can also add listings in bulk through other methods.
 
-* Importing a CSV file
-* Linking your Google Sheet with the platform
+### Submission Methods
 
-### Website Auto-Extraction (Optional)
+<Tabs>
+  <Tab title="Manual Entry (Members)">
+    Members use the "Add New Listing" form in their dashboard to submit individual listings with all required information.
+    
+    **Best for**: Single listing submissions, detailed entries
+  </Tab>
+  
+  <Tab title="CSV Import (Owners)">
+    Directory owners can import multiple listings at once from a CSV file.
+    
+    **Best for**: Bulk additions, migrating data, mass updates
+  </Tab>
+  
+  <Tab title="Google Sheets (Owners)">
+    Link your Google Sheet directly to the platform for automated synchronization.
+    
+    **Best for**: Ongoing updates, collaborative management
+  </Tab>
+</Tabs>
 
-If the listing is linked to a website, users can add their website URL so that the system automatically extracts the title and description. Simply:
+### Website Auto-Extraction
 
-1. Enter the website URL
+<Card title="Smart Content Generation" icon="wand-sparkles">
+If the listing is linked to a website, users can leverage automatic content extraction to save time.
+
+**How it works**:
+1. Enter the website URL in the form
 2. Click "Continue with Website"
-3. Wait a few seconds for the title and description to be generated automatically
+3. Wait a few seconds for processing
+4. The system automatically extracts:
+   - Listing title
+   - Short description
+   - Potentially other metadata
+</Card>
 
-### Listing Form Tabs
+<Tip>
+This feature significantly reduces submission time and improves data accuracy by pulling information directly from the source.
+</Tip>
 
-The listing form is organized into customizable tabs. You can choose which ones to show or hide, and even add new custom fields for your directory. These tabs include:
+## Listing Form Structure
 
-#### Business Tab
+The listing form is organized into customizable tabs. Directory owners can show, hide, or add custom fields to match their specific needs.
 
-* Business phone
-* Operating hours
-* Location
+### Business Information Tab
 
-#### Media Tab
+<AccordionGroup>
+  <Accordion title="Business Phone" icon="phone">
+    Contact phone number for the business or service.
+    
+    **Display**: Shows on listing page with click-to-call functionality on mobile
+  </Accordion>
+  
+  <Accordion title="Operating Hours" icon="clock">
+    Business hours for each day of the week with open/closed status.
+    
+    **Features**:
+    - Set hours for each day individually
+    - Mark as closed for specific days
+    - Live "Open Now" or "Closed" indicator on listing
+  </Accordion>
+  
+  <Accordion title="Location" icon="map-pin">
+    Physical address and map integration.
+    
+    **Display**: Interactive map on listing page showing business location
+  </Accordion>
+</AccordionGroup>
 
-* Upload up to three images
-* Add one YouTube video
+### Media Tab
 
-#### Categories and Tags
+Add visual content to make listings more engaging and attractive.
 
-* Select relevant categories
-* Add tags
+<CardGroup cols={2}>
+  <Card title="Images" icon="images">
+    Upload up to **3 images** showcasing the business, products, or services
+    
+    **Best practices**:
+    - Use high-quality photos
+    - Show different aspects
+    - Optimize for web
+  </Card>
+  
+  <Card title="Video" icon="video">
+    Add **1 YouTube video** for rich media content
+    
+    **Use cases**:
+    - Business tours
+    - Product demos
+    - Customer testimonials
+    - Promotional content
+  </Card>
+</CardGroup>
 
-#### Links and Description
+### Categories and Tags Tab
 
-* Main listing link
-* Demo link (if available)
-* Detailed description
+Organize listings for easy discovery and filtering.
 
-You can write the description manually or generate it using AI. Click "Generate" and wait a few seconds for the AI to create the content. As a directory owner, you can customize the AI prompt used to generate this content from your client dashboard, controlling its length and tone.
+<Steps>
+  <Step title="Select Categories">
+    Choose from your directory's category structure (at least one required).
+    
+    Members can select multiple categories if the listing fits several classifications.
+  </Step>
+  
+  <Step title="Add Tags">
+    Apply relevant tags for additional filtering and discovery.
+    
+    **Examples**: "WiFi Available", "Pet Friendly", "Outdoor Seating"
+  </Step>
+</Steps>
 
-#### Pricing Section
+### Links and Description Tab
 
-Users can determine the pricing model for their listing:
+Provide essential links and detailed information about the listing.
 
-* **Free**: No cost
-* **Paid**: Enter the price, choose the currency, and indicate whether it's the lowest price
-* **Contact for pricing**: Requires contact to get pricing
+#### Main Listing Link
+The primary URL where visitors can learn more or take action.
 
-**Lowest Price Feature**: This is useful for services with multiple plans. Since users can't submit all plans, they can only show the lowest price and mark it as such. A plus sign will then appear next to the price to indicate that the service starts at that amount.
+#### Demo Link (Optional)
+For products or services offering trials or demos.
 
-You can also add a coupon code if available.
+#### Detailed Description
 
-#### Social & SEO Section
+<Tabs>
+  <Tab title="Manual Writing">
+    Members write their own description from scratch.
+    
+    **Best for**: Custom messaging, unique voice, specific details
+  </Tab>
+  
+  <Tab title="AI Generation">
+    Click "Generate" and wait a few seconds for AI to create the content.
+    
+    **Features**:
+    - Based on listing information provided
+    - Customizable prompt (directory owner setting)
+    - Adjustable length and tone
+    - Multiple generation attempts possible
+    
+    **Best for**: Quick submissions, writer's block, non-native speakers
+  </Tab>
+</Tabs>
 
-* Add social links
-* Manage SEO settings using the SEO Manager tool
+<Info>
+As a directory owner, you can customize the AI prompt from your client dashboard to control content length, tone, and style for all AI-generated descriptions.
+</Info>
 
-The SEO Manager works similarly to Yoast on WordPress, helping users optimize their listings for better visibility.
+### Pricing Section
+
+Define the pricing model for the listing.
+
+<Tabs>
+  <Tab title="Free">
+    **No cost** to use the product or service.
+    
+    **Display**: Shows "Free" badge on listing card
+  </Tab>
+  
+  <Tab title="Paid">
+    Specify pricing details:
+    - **Price amount**: Enter the cost
+    - **Currency**: Choose from available currencies
+    - **Lowest Price indicator**: Check if showing starting price
+    
+    **Lowest Price Feature**: For services with multiple plans, show the entry-level price. A **plus sign (+)** appears next to the price to indicate "Starting at $X".
+    
+    **Example**: "$29+" indicates service starts at $29/month
+  </Tab>
+  
+  <Tab title="Contact for Pricing">
+    No public pricing available—requires direct contact.
+    
+    **Use cases**: Enterprise pricing, custom solutions, quote-based services
+  </Tab>
+</Tabs>
+
+#### Coupon Codes
+
+<Card title="Add Special Offers" icon="ticket">
+Members can include coupon codes to provide value to directory visitors.
+
+**Benefits**:
+- Attracts more attention
+- Encourages conversions
+- Tracks directory referrals
+- Provides visitor value
+</Card>
+
+### Social & SEO Section
+
+Optimize listings for discovery and social sharing.
+
+#### Social Links
+Connect all relevant social media profiles:
+- Twitter/X, Facebook, Instagram
+- LinkedIn, YouTube, TikTok
+- And more platforms
+
+#### SEO Manager
+
+<Card title="WordPress-Style SEO Tool" icon="magnifying-glass">
+The SEO Manager works similarly to Yoast on WordPress, helping members optimize listings for better visibility.
+
+**Features**:
+- SEO title optimization
+- Meta description writing
+- Keyword suggestions
+- Readability analysis
+- Preview of search result appearance
+
+Members can fine-tune how their listing appears in search engines and social shares.
+</Card>
 
 ## Listings Management
 
-In the Listings section, users can view all the listings they've added along with their status:
+Members can view and manage all their submitted listings from one central location.
 
-* **Featured**: Indicates whether a listing is highlighted
-* **Status**: Can be Pending, Approved, Published, or Rejected
+### Listing Overview Table
 
-### Listing Status Explained
+Each listing displays key information:
 
-When you first submit a listing, it stays in the **Pending** state, unless it's added by the directory owner. After review, the owner can approve, publish, or reject it.
+<CardGroup cols={2}>
+  <Card title="Featured Status" icon="star">
+    Indicates whether the listing has premium featured placement
+    
+    **Visual indicator**: Badge or highlight on featured listings
+  </Card>
+  
+  <Card title="Listing Status" icon="signal">
+    Current state of the listing in the approval workflow
+    
+    **Possible statuses**: Pending, Approved, Published, Rejected
+  </Card>
+</CardGroup>
 
+### Understanding Listing Statuses
+
+<Tabs>
+  <Tab title="Pending">
+    **Initial state** after submission
+    
+    - Listing awaits directory owner review
+    - Not visible to public
+    - Can be edited by submitter
+    
+    **Note**: All new submissions start as Pending (unless added by owner)
+  </Tab>
+  
+  <Tab title="Approved">
+    **Reviewed and accepted**, but not yet public
+    
+    - Directory owner has approved the content
+    - Scheduled for publishing (automatic or manual)
+    - Often used with publishing delays for free plans
+    
+    **Use case**: Free tier listings that must wait 30-60 days before going live
+  </Tab>
+  
+  <Tab title="Published">
+    **Live and visible** on the directory
+    
+    - Publicly accessible to all visitors
+    - Appears in search results and filters
+    - Fully indexed and discoverable
+  </Tab>
+  
+  <Tab title="Rejected">
+    **Not accepted** for the directory
+    
+    - Did not meet quality or criteria requirements
+    - Member may receive feedback on rejection reason
+    - Can be resubmitted after corrections
+  </Tab>
+</Tabs>
+
+### Approved vs Published
+
+<Card title="Key Difference" icon="circle-question">
 **What's the difference between Approved and Published?**
 
-* **Approved**: The directory owner has reviewed the listing but hasn't published it yet. It can either be published immediately or scheduled for automatic publishing after a certain number of days. This is often used for free plans, where users must wait before their listings go live.
-* **Published**: The listing is live and visible on the directory.
+**Approved** listings have been reviewed and accepted by the directory owner but aren't published yet. They can either be:
+- Published immediately by the owner
+- Scheduled for automatic publishing after a set number of days
 
-To publish instantly, users can upgrade to a paid plan — and that's one of the main ways to monetize your directory.
+This is often used for **free plans**, where users must wait (e.g., 30-60 days) before their listings go live.
+
+**Published** listings are live and visible to everyone on the directory immediately.
+</Card>
+
+<Tip>
+**Monetization opportunity**: To publish instantly, users can upgrade to a paid plan — this is one of the main ways to monetize your directory!
+</Tip>
 
 ## Favorites
 
-In the Favorites section, members can view all their saved listings.
+<Card title="Bookmark Listings" icon="heart">
+The Favorites section allows members to save listings they're interested in for quick access later.
+
+**Features**:
+- One-click bookmarking
+- Organized in member dashboard
+- Easy access to saved listings
+- No limit on favorites
+
+**Use cases**:
+- Research and comparison
+- Wishlist creation
+- Future reference
+- Recommendation tracking
+</Card>
 
 ## Reviews
 
-The Reviews section allows members to see both:
+Members can view and manage their review activity from one place.
 
-* Reviews they've given
-* Reviews they've received
+<Tabs>
+  <Tab title="Reviews Given">
+    All reviews the member has written for other listings
+    
+    **Actions available**:
+    - View review content
+    - See which listings were reviewed
+    - Track review dates
+    - Edit or delete reviews (if permitted)
+  </Tab>
+  
+  <Tab title="Reviews Received">
+    Reviews that other members have left on the member's listings
+    
+    **Insights include**:
+    - Star ratings
+    - Review text
+    - Reviewer information
+    - Response capability (if enabled)
+  </Tab>
+</Tabs>
 
 ## Claim Listings
 
-Claiming a listing allows users to verify business ownership and prevent others from claiming it.
+Claiming allows business owners to verify ownership and take control of their listings.
 
-You'll see a message: "Verify that you own these businesses to prevent others from claiming them."
+<Warning>
+**Important message to members**: "Verify that you own these businesses to prevent others from claiming them."
+</Warning>
+
+### Claiming Process
+
+<Steps>
+  <Step title="Search for Business">
+    Use the search bar to find the listing you want to claim.
+  </Step>
+  
+  <Step title="Select Listing">
+    Choose the business from search results.
+  </Step>
+  
+  <Step title="Choose Verification Method">
+    Select from available verification options.
+  </Step>
+  
+  <Step title="Complete Verification">
+    Follow the specific steps for your chosen method.
+  </Step>
+  
+  <Step title="Gain Control">
+    Once verified, the listing appears under "My Verified Listings" with full management access.
+  </Step>
+</Steps>
 
 ### Verification Methods
 
-You can use the search bar to find the business you want to claim. Once you select it, you'll see different verification methods:
+<Tabs>
+  <Tab title="Email Domain Verification">
+    **Ownership confirmed by matching domains**
+    
+    **How it works**:
+    - Listing domain: `mycompany.com`
+    - Account email must be: `user@mycompany.com`
+    - System automatically verifies domain match
+    
+    **Requirements**:
+    - Professional email address with company domain
+    - Personal emails (Gmail, Yahoo) only work if listing uses those domains
+    
+    **Best for**: Corporate websites, established businesses
+  </Tab>
+  
+  <Tab title="Business Email Verification">
+    **Account email matches listing's business email**
+    
+    **How it works**:
+    - System compares member account email
+    - With business email listed on the entry
+    - If they match, verification succeeds
+    
+    **Process**:
+    - Automatic verification
+    - Instant claim upon match
+    - Full control granted immediately
+    
+    **Best for**: Simple, quick verification
+  </Tab>
+  
+  <Tab title="Website Code Verification">
+    **Add verification code to your website**
+    
+    **How it works**:
+    1. System generates unique verification code
+    2. Member adds code to website HTML (head or body section)
+    3. Member clicks "Verify Ownership"
+    4. System scans website and confirms code presence
+    5. Listing is automatically claimed
+    
+    **Best for**: Maximum security, tech-savvy users
+  </Tab>
+</Tabs>
 
-#### Email Domain Verification
-
-Ownership is confirmed by matching your listing's domain with your account email. For example, if your listing domain is `mycompany.com`, your account email should also be from `@mycompany.com`. Personal emails like Gmail or Yahoo won't work unless the listing itself uses those domains.
-
-#### Business Email Verification
-
-Your account email must match the business email shown in the listing. Once verified, the listing is automatically claimed under your account, giving you full control to manage and update it.
-
-#### Website Code Verification
-
-1. Generate a unique verification code
-2. Add it to your website's HTML, either in the head or body section
-3. Click "Verify Ownership"
-4. The system will confirm it automatically
-
-Verified listings will then appear under "My Verified Listings."
+<Check>
+After successful verification, listings appear under **"My Verified Listings"** with full editing and management capabilities.
+</Check>
 
 ## Settings
 
+Members can manage their account, security, and preferences from the Settings section.
+
 ### Details Tab
 
-* Manage your profile name and avatar
-* Upload a new avatar or delete the current one
-* Update your display name, which appears publicly on the directory
+<AccordionGroup>
+  <Accordion title="Profile Information" icon="user">
+    Manage personal information displayed on the directory
+    
+    **Options**:
+    - Update display name
+    - Change profile information
+    - Edit bio or description (if enabled)
+  </Accordion>
+  
+  <Accordion title="Avatar Management" icon="image-portrait">
+    Control profile picture appearance
+    
+    **Actions**:
+    - Upload new avatar image
+    - Delete current avatar
+    - Preview changes before saving
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+The display name appears publicly on the directory alongside reviews, listings, and any other member-generated content.
+</Tip>
 
 ### Email Section
 
-* Change your email address by entering a new one
-* Click "Change Email"
+<Card title="Change Email Address" icon="envelope">
+Update the email address associated with the account.
+
+**Process**:
+1. Enter new email address
+2. Click "Change Email"
+3. Verify new email address
+4. Confirmation of change
+</Card>
 
 ### Security Section
 
-* Update your password by entering your current and new passwords
-* Enable Two-Factor Authentication for extra security, requiring email verification each time you log in
+Protect your account with strong security measures.
+
+<CardGroup cols={2}>
+  <Card title="Password Update" icon="lock">
+    Change account password for security
+    
+    **Requirements**:
+    - Enter current password
+    - Provide new password
+    - Confirm new password
+    - Click "Update Password"
+  </Card>
+  
+  <Card title="Two-Factor Authentication" icon="shield-halved">
+    Enable extra security layer
+    
+    **How it works**:
+    - Requires email verification at each login
+    - Sends verification code to email
+    - Enter code to complete login
+    - Enhanced account protection
+  </Card>
+</CardGroup>
+
+<Warning>
+Enable Two-Factor Authentication for enhanced security, especially if managing business listings or paid subscriptions.
+</Warning>
 
 ### Plans and Billings
 
-Users can manage active subscriptions and billing details. All subscribed plans appear here with their status and renewal options. If there are no active subscriptions, a message will say: "You are not subscribed to any listing plans."
+Manage active subscriptions and payment information.
+
+<Card title="Subscription Management" icon="credit-card">
+All subscribed plans appear here with detailed information:
+
+**Displays**:
+- Active subscription plans
+- Plan status (active, expired, cancelled)
+- Renewal dates
+- Payment history
+- Billing details
+
+**If no subscriptions**:
+Message displays: "You are not subscribed to any listing plans."
+</Card>
+
+**Available actions**:
+- View plan details
+- Update payment methods
+- Cancel subscriptions
+- Upgrade or downgrade plans
+- View invoices and receipts
 
 ### Notification Settings
 
-Users can manage email preferences for:
+Control which email communications members receive.
 
-* Marketing updates
-* Product news
-* Security alerts
+<AccordionGroup>
+  <Accordion title="Marketing Updates" icon="bullhorn">
+    Promotional content and special offers from the directory
+  </Accordion>
+  
+  <Accordion title="Product News" icon="newspaper">
+    Updates about new features, improvements, and directory changes
+  </Accordion>
+  
+  <Accordion title="Security Alerts" icon="triangle-exclamation">
+    Important security notifications and account activity alerts (recommended to keep enabled)
+  </Accordion>
+</AccordionGroup>
 
-Click "Update" to save your preferences.
+<Check>
+Click **"Update"** to save notification preference changes.
+</Check>
 
 ### Account Deletion
 
-At the bottom, in the Account section, users can permanently delete their accounts if they wish.
+<Warning>
+**Permanent Action**: At the bottom of the Account section, members can permanently delete their accounts.
+
+**Important considerations**:
+- This action is irreversible
+- All listings may be affected (depending on directory settings)
+- Reviews and favorites will be removed
+- Subscription access ends immediately
+- No refunds for active subscriptions
+
+Members should download any important data before deleting their accounts.
+</Warning>
+
+## Best Practices for Members
+
+<CardGroup cols={2}>
+  <Card title="Complete Your Profile" icon="user-check">
+    Fill out all profile information for credibility and trust
+  </Card>
+  
+  <Card title="Verify Your Listings" icon="badge-check">
+    Claim and verify ownership to prevent others from claiming
+  </Card>
+  
+  <Card title="Keep Information Updated" icon="arrows-rotate">
+    Regularly update listings with current information
+  </Card>
+  
+  <Card title="Engage with Reviews" icon="comments">
+    Respond to reviews when possible to show you're active
+  </Card>
+  
+  <Card title="Enable 2FA" icon="shield">
+    Protect your account with two-factor authentication
+  </Card>
+  
+  <Card title="Use Quality Media" icon="star">
+    Upload high-quality images and videos for better engagement
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Adding Listings" icon="plus-circle" href="/pages/adding-listings">
+    Learn more about listing submission controls and custom fields
+  </Card>
+  
+  <Card title="Managing Listings" icon="list-check" href="/pages/managing-listings">
+    Understand how directory owners manage and moderate submissions
+  </Card>
+  
+  <Card title="Tags & Monetization" icon="tags" href="/pages/tags-and-monetization">
+    Explore subscription plans and monetization strategies
+  </Card>
+  
+  <Card title="Automation" icon="wand-magic-sparkles" href="/pages/automation">
+    Set up automated workflows for listings
+  </Card>
+</CardGroup>
 

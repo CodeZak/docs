@@ -1,129 +1,647 @@
 ---
-title: "Creating a new directory"
-description: "Learn how to create a new directory in DirectoryEasy"
+title: "Creating Your Directory"
+description: "Complete guide to creating and configuring a new directory in DirectoryEasy"
 ---
 
-# Getting Started
+## Overview
 
-<div style={{ textAlign: 'center', margin: '2rem 0' }}>
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/_7NsLWSTjrs"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-    style={{ maxWidth: '100%', borderRadius: '8px' }}
-  ></iframe>
-</div>
+Creating a directory with DirectoryEasy is simple and straightforward. In just three steps—choose language, choose type, and complete the form—you'll have a fully functional directory ready to customize and launch.
 
-After you sign in, head to : Directoryeasy.com/client/directories/new
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/_7NsLWSTjrs"
+  title="Creating a Directory in DirectoryEasy"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
 
-Create a Standard or Business directory in three steps: choose language, choose type, fill the form, and submit.
+## Getting Started
 
-Important: Only these fields are required to create a new directory:
+After you sign in to DirectoryEasy, navigate to:
 
-* Name
-* Tagline
-* Subdomain
-* Categories (at least one category with at least one subcategory)
+```
+https://directoryeasy.com/client/directories/new
+```
 
-#### Step 1: Choose a language
+<Info>
+You can create either a **Standard** (product/service-oriented) or **Business** (location-oriented) directory. Don't worry—you can customize all fields later regardless of which type you choose.
+</Info>
 
-* Pick the language for directory (We support +22 Languages).
+## Required Fields
 
-#### Step 2: Choose a directory type
+Before you begin, know that only these fields are required to create your directory:
 
-* Standard directory: Product/service–oriented. Enables product-focused listing fields by default (logo, pricing, demo link, coupons).
-* Business directory: Business/location–oriented. Enables business-focused fields by default (operating hours, business phone, map/location).
+<CardGroup cols={2}>
+  <Card title="Name" icon="heading">
+    Your directory's public name
+  </Card>
+  
+  <Card title="Tagline" icon="quote-left">
+    Short descriptive line for marketing
+  </Card>
+  
+  <Card title="Subdomain" icon="globe">
+    Your DirectoryEasy subdomain
+  </Card>
+  
+  <Card title="Categories" icon="folder-tree">
+    At least one category with one subcategory
+  </Card>
+</CardGroup>
 
-You can still customize fields later in the Fields tab.
+Everything else is optional and can be configured now or later!
 
-#### Step 3: Complete the form (tabs overview)
+## Three-Step Creation Process
 
-The form is organized into tabs so you can configure everything cleanly. Remember, you can return and edit any setting after creation.
+### Step 1: Choose a Language
 
-**General**
+Select the language for your directory interface and content.
 
-* Name (required): Public directory name.
-* Tagline (required): Short descriptive line shown in hero/marketing areas.
-* Subheading: Optional longer introductory text.
-* Buttons: Add Listing and Newsletter button texts.
-* Hero Button (text + link): Optional call-to-action in your hero section.
-* Images: Logo, Favicon, Hero image.
-* Active Status: Toggle directory visibility.
+<Card title="Multilingual Support" icon="language">
+DirectoryEasy supports **22+ languages**, making it easy to create directories for any global audience.
 
-**SEO**
+**Popular languages include**: English, Spanish, French, German, Italian, Portuguese, Dutch, Polish, Russian, Japanese, Chinese, Arabic, and many more.
+</Card>
 
-* SEO Title, Description, Keywords: Defaults for your directory home page.
-* SEO Image: The social/OG image used when your directory is shared.
+<Tip>
+Choose the primary language of your target audience. You can enable additional languages later through the Languages tab.
+</Tip>
 
-**Social**
+### Step 2: Choose a Directory Type
 
-* Add your social profiles (Twitter/X, Facebook, Instagram, LinkedIn, YouTube, GitHub, TikTok, Pinterest, Snapchat, Reddit, Medium, Telegram, Discord). These may display in the footer/header depending on your theme.
+Pick the directory type that best matches your use case:
 
-**Domain**
+<Tabs>
+  <Tab title="Standard Directory">
+    **Product/Service-Oriented**
+    
+    Perfect for directories focusing on:
+    - SaaS products
+    - Digital tools
+    - Software services
+    - Online platforms
+    - Tech products
+    
+    **Default enabled fields**:
+    - Logo
+    - Pricing information (lowestPrice, pricingModel)
+    - Demo link
+    - Coupons and offers
+    
+    **Default disabled fields**:
+    - Operating hours
+    - Business phone
+    - Location map
+  </Tab>
+  
+  <Tab title="Business Directory">
+    **Business/Location-Oriented**
+    
+    Perfect for directories focusing on:
+    - Local businesses
+    - Restaurants and cafes
+    - Retail stores
+    - Service providers
+    - Physical locations
+    
+    **Default enabled fields**:
+    - Operating hours
+    - Business phone
+    - Location map
+    - Address information
+    
+    **Default disabled fields**:
+    - Logo
+    - Pricing models
+    - Demo links
+    - Coupons
+  </Tab>
+</Tabs>
 
-* Subdomain (required): your-directory.directoryeasy.net. Can be disabled later if you only want a custom domain.
-* Custom Domains: Add after the directory is created (DNS and SSL verification required). You can set primary domain, redirects between domains, and WWW preference.
+<Info>
+**Don't stress about this choice!** You can customize which fields are enabled or disabled later in the Fields tab. This just sets convenient defaults.
+</Info>
 
-Notes:
+### Step 3: Complete the Configuration Form
 
-* Custom domains can only be added after creation.
-* DNS changes may take time to propagate; SSL provisioning typically takes 5–15 minutes after verification.
+The creation form is organized into tabs for clean configuration. You can return and edit any setting after creation.
 
-**Fields**
+## Configuration Tabs
 
-Decide which listing fields are enabled and required for your directory. This directly controls:
+### General Tab
 
-* What submitters must provide in the listing form
-* What's validated during CSV import (required fields must be mapped)
+Configure your directory's basic information and appearance.
 
-Tips:
+<AccordionGroup>
+  <Accordion title="Name (Required)" icon="heading">
+    Your directory's public name that appears everywhere.
+    
+    **Examples**: "SaaS Directory", "NYC Restaurant Guide", "Tech Tools Hub"
+  </Accordion>
+  
+  <Accordion title="Tagline (Required)" icon="quote-left">
+    Short descriptive line shown in hero and marketing areas.
+    
+    **Examples**: 
+    - "Discover the best SaaS tools"
+    - "Your guide to NYC dining"
+    - "Find your next favorite tool"
+  </Accordion>
+  
+  <Accordion title="Subheading (Optional)" icon="align-left">
+    Longer introductory text that appears below the tagline.
+    
+    **Example**: "Browse hundreds of verified tools, compare features, and find the perfect solution for your needs."
+  </Accordion>
+  
+  <Accordion title="Button Texts" icon="hand-pointer">
+    Customize the text for:
+    - **Add Listing button**: Default "Add Listing" or customize to "Submit Your Business", "List Your Tool", etc.
+    - **Newsletter button**: Default "Subscribe" or customize to fit your style
+  </Accordion>
+  
+  <Accordion title="Hero Button (Optional)" icon="mouse-pointer">
+    Add an optional call-to-action button in your hero section:
+    - **Button Text**: What the button says
+    - **Button Link**: Where it leads
+    
+    **Use cases**: "Get Started", "Learn More", "Browse Premium", "Join Now"
+  </Accordion>
+  
+  <Accordion title="Images" icon="image">
+    Upload visual assets for your directory:
+    - **Logo**: Your brand logo (appears in header/footer)
+    - **Favicon**: Small icon for browser tabs
+    - **Hero Image**: Large background image for your homepage hero section
+  </Accordion>
+  
+  <Accordion title="Active Status" icon="toggle-on">
+    Toggle your directory's visibility:
+    - **Active**: Directory is live and accessible
+    - **Inactive**: Directory is hidden (useful during setup or maintenance)
+  </Accordion>
+</AccordionGroup>
 
-* Name and Categories are always required.
-* You can add Custom Fields (e.g., color, size) from the Customization → Custom Fields area (Sidebare); each custom field can be marked required or optional. When active, they appear as `custom_<fieldName>` in CSV template/import.
+### SEO Tab
 
-Type defaults (you can change any of these later):
+Optimize your directory for search engines and social sharing.
 
-* Standard: Enables product-focused fields like logo, lowestPrice, pricingModel, demoLink, coupons. Disables business-only fields (operating\_hours, business\_phone, location\_map) by default.
-* Business: Enables business-focused fields like operating\_hours, business\_phone, location\_map. Disables product-only fields (logo, pricing, demo, coupons) by default.
+<Steps>
+  <Step title="SEO Title">
+    The title that appears in search engine results and browser tabs.
+    
+    **Best practice**: Keep it under 60 characters, include your main keyword.
+  </Step>
+  
+  <Step title="SEO Description">
+    The description that appears in search engine results.
+    
+    **Best practice**: 150-160 characters, compelling and keyword-rich.
+  </Step>
+  
+  <Step title="SEO Keywords">
+    Comma-separated keywords relevant to your directory.
+    
+    **Example**: "saas tools, software directory, business tools, productivity apps"
+  </Step>
+  
+  <Step title="SEO Image">
+    The Open Graph image used when your directory is shared on social media.
+    
+    **Recommended size**: 1200x630 pixels
+  </Step>
+</Steps>
 
-**Categories**
+<Tip>
+Good SEO settings are crucial for organic traffic. Take time to craft compelling, keyword-optimized titles and descriptions.
+</Tip>
 
-* Build your categories and subcategories with drag-and-drop.
-* Requirements to create a directory:
-  * At least one category
-  * Each category must have at least one subcategory
+### Social Tab
 
-Matching mode:
+Connect your social media profiles to display throughout your directory.
 
-* Union (OR): Show listings that match any selected category.
-* Intersection (AND): Show listings that match all selected categories.
+<Card title="Supported Platforms" icon="share-nodes">
+Add profile links for any of these platforms:
 
-**Pages**
+**Popular**: Twitter/X, Facebook, Instagram, LinkedIn, YouTube
 
-* Create custom pages (e.g., About, Hiring). Content is edited in a rich markdown editor. Draft or publish pages.
-* Depending on your plan, there may be limits to the number of custom pages.
+**Tech/Community**: GitHub, Discord, Reddit, Medium, Telegram
 
-**Navigation**
+**Visual**: TikTok, Pinterest, Snapchat
 
-* Manage header navigation links. Link types:
-  * Default: Built-in routes
-  * Custom: Any URL
-  * Custom page: Select one of your Custom Pages
+These links may display in your footer or header depending on your selected theme.
+</Card>
 
-**Footer**
+### Domain Tab
 
-* Configure footer sections (links), copyright, tagline, and which parts to show (contact info, categories, recent listings, social links).
+Configure your directory's web address.
 
-**Languages**
+<Tabs>
+  <Tab title="Subdomain (Required)">
+    Your free DirectoryEasy subdomain: `your-directory.directoryeasy.net`
+    
+    **Requirements**:
+    - Lowercase letters, numbers, and hyphens only
+    - Must be unique across DirectoryEasy
+    - Can be disabled later if using custom domain only
+    
+    **Examples**: 
+    - `saas-tools.directoryeasy.net`
+    - `nyc-restaurants.directoryeasy.net`
+    - `tech-directory.directoryeasy.net`
+  </Tab>
+  
+  <Tab title="Custom Domains">
+    Add your own domain after directory creation.
+    
+    **Process**:
+    1. Create your directory first
+    2. Add custom domain in settings
+    3. Complete DNS verification (point your domain to DirectoryEasy)
+    4. SSL provisioning (typically 5-15 minutes after verification)
+    
+    **Features**:
+    - Set primary domain
+    - Configure redirects between domains
+    - Set WWW preference (with or without www)
+    - SSL certificates automatically provisioned
+  </Tab>
+</Tabs>
 
-* Enable internationalization, set default locale, and add available locales.
+<Warning>
+**Important**: Custom domains can only be added **after** directory creation. DNS changes may take time to propagate globally.
+</Warning>
 
-#### Tips and troubleshooting
+### Fields Tab
 
-* Can't submit? Check the Categories tab first—make sure you created a category and added a subcategory.
-* Plan to use a custom domain? Create the directory first, then add your domain and complete DNS + SSL.
-* Not sure which type to pick? Choose the one closest to your use case; you can still customize fields later.
+Control which listing fields are enabled and required for submissions.
+
+<Info>
+This directly controls:
+- What submitters must provide in the listing form
+- What's validated during CSV import (required fields must be mapped)
+</Info>
+
+#### Always Required Fields
+
+<Card title="Core Fields" icon="asterisk">
+- **Name**: Listing title (always required)
+- **Categories**: At least one category selection (always required)
+</Card>
+
+#### Optional Standard Fields
+
+Toggle these on/off based on your directory type:
+
+| Field | Standard Default | Business Default | Use Case |
+|-------|-----------------|------------------|----------|
+| Logo | ✓ Enabled | ✗ Disabled | Product/brand identity |
+| Lowest Price | ✓ Enabled | ✗ Disabled | Pricing information |
+| Pricing Model | ✓ Enabled | ✗ Disabled | Subscription/one-time/free |
+| Demo Link | ✓ Enabled | ✗ Disabled | Try before you buy |
+| Coupons | ✓ Enabled | ✗ Disabled | Discount codes |
+| Operating Hours | ✗ Disabled | ✓ Enabled | Business schedules |
+| Business Phone | ✗ Disabled | ✓ Enabled | Contact number |
+| Location Map | ✗ Disabled | ✓ Enabled | Physical location |
+
+<Tip>
+You can change any of these settings later. The directory type just sets convenient defaults for your use case.
+</Tip>
+
+#### Custom Fields
+
+<Card title="Extend Your Fields" icon="puzzle-piece">
+Add custom fields from **Customization → Custom Fields** in the sidebar:
+
+**Examples**: Color, Size, Year Founded, Team Size, Country, Industry
+
+Each custom field can be:
+- Marked as required or optional
+- Different field types (text, number, select, etc.)
+- Appears as `custom_<fieldName>` in CSV imports
+</Card>
+
+### Categories Tab
+
+Build your directory's category structure with drag-and-drop ease.
+
+<Steps>
+  <Step title="Create Categories">
+    Add top-level categories that organize your directory.
+    
+    **Examples**: "Project Management", "Marketing Tools", "Restaurants", "Retail"
+  </Step>
+  
+  <Step title="Add Subcategories">
+    Each category must have at least one subcategory.
+    
+    **Examples**: 
+    - Project Management → Task Management, Team Collaboration, Time Tracking
+    - Restaurants → Italian, Mexican, Japanese, American
+  </Step>
+  
+  <Step title="Arrange with Drag & Drop">
+    Reorder categories and subcategories by dragging them into your preferred order.
+  </Step>
+</Steps>
+
+<Warning>
+**Cannot create directory without categories!** You must have:
+- At least one category
+- Each category must have at least one subcategory
+</Warning>
+
+#### Category Matching Mode
+
+Choose how multiple category selections work:
+
+<Tabs>
+  <Tab title="Union (OR)">
+    Show listings that match **any** selected category.
+    
+    **Example**: Selecting "Italian" OR "Mexican" shows all Italian restaurants plus all Mexican restaurants.
+    
+    **Best for**: Broader searches, more results
+  </Tab>
+  
+  <Tab title="Intersection (AND)">
+    Show listings that match **all** selected categories.
+    
+    **Example**: Selecting "Restaurant" AND "Downtown" shows only restaurants that are both in the Restaurant category AND the Downtown location.
+    
+    **Best for**: Precise filtering, specific results
+  </Tab>
+</Tabs>
+
+### Pages Tab
+
+Create custom pages for your directory.
+
+<Card title="Custom Content Pages" icon="file-lines">
+Add pages like:
+- About Us
+- Contact
+- Pricing
+- How It Works
+- Careers/Hiring
+- Privacy Policy
+- Terms of Service
+
+**Features**:
+- Rich markdown editor for content
+- Save as draft or publish immediately
+- Fully customizable content
+</Card>
+
+<Info>
+Depending on your plan, there may be limits to the number of custom pages you can create.
+</Info>
+
+### Navigation Tab
+
+Manage your header navigation links.
+
+<Tabs>
+  <Tab title="Default Links">
+    Built-in routes that DirectoryEasy provides automatically.
+    
+    **Examples**: Home, Listings, Categories, Blog, Submit Listing
+  </Tab>
+  
+  <Tab title="Custom Links">
+    Link to any external URL.
+    
+    **Examples**: Your main website, support portal, external resources
+  </Tab>
+  
+  <Tab title="Custom Page Links">
+    Link to one of your custom pages.
+    
+    **Examples**: About page, Contact page, Pricing page
+  </Tab>
+</Tabs>
+
+<Tip>
+Keep your navigation clean and focused—typically 4-7 main links work best for user experience.
+</Tip>
+
+### Footer Tab
+
+Configure your directory's footer appearance and content.
+
+<AccordionGroup>
+  <Accordion title="Footer Sections" icon="link">
+    Organize footer links into sections (columns).
+    
+    **Common structure**:
+    - Company: About, Contact, Careers
+    - Resources: Blog, Help Center, FAQ
+    - Legal: Privacy, Terms, Cookie Policy
+  </Accordion>
+  
+  <Accordion title="Copyright Text" icon="copyright">
+    Customize your copyright notice.
+    
+    **Example**: "© 2024 YourDirectory. All rights reserved."
+  </Accordion>
+  
+  <Accordion title="Footer Tagline" icon="quote-right">
+    Add a brief description or slogan in your footer.
+  </Accordion>
+  
+  <Accordion title="Display Options" icon="eye">
+    Choose which elements to show:
+    - Contact information
+    - Category links
+    - Recent listings
+    - Social media links
+  </Accordion>
+</AccordionGroup>
+
+### Languages Tab
+
+Enable internationalization for a global audience.
+
+<Steps>
+  <Step title="Enable Internationalization">
+    Toggle on multi-language support for your directory.
+  </Step>
+  
+  <Step title="Set Default Locale">
+    Choose the primary language that users see by default.
+  </Step>
+  
+  <Step title="Add Available Locales">
+    Select which additional languages users can switch to.
+  </Step>
+</Steps>
+
+<Card title="Global Reach" icon="earth-americas">
+Offering multiple languages can significantly expand your directory's reach and user base. DirectoryEasy makes internationalization seamless.
+</Card>
+
+## Creating Your Directory
+
+Once you've configured all tabs:
+
+<Steps>
+  <Step title="Review Your Settings">
+    Double-check that all required fields are filled, especially:
+    - Name, Tagline, Subdomain
+    - At least one category with subcategories
+  </Step>
+  
+  <Step title="Click Submit">
+    Submit your directory for creation.
+  </Step>
+  
+  <Step title="Wait for Processing">
+    DirectoryEasy creates your directory (typically takes seconds).
+  </Step>
+  
+  <Step title="Access Your Directory">
+    Once created, you can immediately access and start customizing your new directory!
+  </Step>
+</Steps>
+
+<Check>
+Congratulations! Your directory is now live. You can continue customizing, add listings, and configure advanced features.
+</Check>
+
+## Post-Creation Steps
+
+After creating your directory, consider these next steps:
+
+<CardGroup cols={2}>
+  <Card title="Design Customization" icon="palette" href="/pages/design-customization">
+    Customize colors, themes, and visual appearance
+  </Card>
+  
+  <Card title="Advanced Customization" icon="code" href="/pages/advanced-customization">
+    Add custom sections, scripts, and terminology
+  </Card>
+  
+  <Card title="Configure Email" icon="envelope" href="/pages/configuring-directory-email">
+    Set up email notifications for listings
+  </Card>
+  
+  <Card title="Miscellaneous Settings" icon="sliders" href="/pages/miscellaneous-settings">
+    Configure features, verification, and display options
+  </Card>
+  
+  <Card title="Tags & Monetization" icon="tags" href="/pages/tags-and-monetization">
+    Set up subscription plans and pricing
+  </Card>
+  
+  <Card title="Automation" icon="wand-magic-sparkles" href="/pages/automation">
+    Configure automated publishing and featured listings
+  </Card>
+</CardGroup>
+
+## Tips and Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Can't submit the form?" icon="circle-exclamation">
+    **Solution**: Check the Categories tab first. Make sure you've:
+    - Created at least one category
+    - Added at least one subcategory to that category
+    
+    This is the most common reason forms don't submit.
+  </Accordion>
+  
+  <Accordion title="Want to use a custom domain?" icon="globe">
+    **Solution**: 
+    1. Create the directory with a subdomain first
+    2. After creation, go to domain settings
+    3. Add your custom domain
+    4. Complete DNS verification
+    5. Wait for SSL provisioning (5-15 minutes)
+    
+    Custom domains cannot be added during initial creation.
+  </Accordion>
+  
+  <Accordion title="Not sure which type to pick?" icon="question">
+    **Solution**: Choose the directory type closest to your use case. Remember:
+    - Standard = Products/Services/Digital
+    - Business = Physical locations/Local businesses
+    
+    You can customize all fields later, so this isn't a permanent decision!
+  </Accordion>
+  
+  <Accordion title="Need to change settings later?" icon="gear">
+    **Solution**: All settings can be edited after creation! Navigate to your directory's settings panel and modify any tab you need.
+  </Accordion>
+  
+  <Accordion title="Subdomain already taken?" icon="triangle-exclamation">
+    **Solution**: Subdomains must be unique across all DirectoryEasy users. Try:
+    - Adding numbers (tech-tools-2024)
+    - Adding your niche (saas-tools-directory)
+    - Using hyphens differently (tech-tools-hub)
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Plan Your Categories" icon="sitemap">
+    Think through your category structure before creating. Well-organized categories improve user experience.
+  </Card>
+  
+  <Card title="Optimize for SEO" icon="magnifying-glass">
+    Invest time in writing good SEO titles and descriptions. This pays dividends in organic traffic.
+  </Card>
+  
+  <Card title="Start Simple" icon="minimize">
+    Don't enable every field and feature at once. Start lean and add complexity as needed.
+  </Card>
+  
+  <Card title="Think Mobile-First" icon="mobile">
+    Most users will browse on mobile. Choose clear, readable designs and concise text.
+  </Card>
+  
+  <Card title="Test Everything" icon="vial">
+    After creation, test your directory from a visitor's perspective. Submit a test listing, browse categories, etc.
+  </Card>
+  
+  <Card title="Use Good Images" icon="image">
+    High-quality logos, favicons, and hero images create professional first impressions.
+  </Card>
+</CardGroup>
+
+## Quick Reference
+
+### Minimum Requirements Checklist
+
+- [ ] Name entered
+- [ ] Tagline written
+- [ ] Subdomain chosen (and available)
+- [ ] At least one category created
+- [ ] Each category has at least one subcategory
+- [ ] Directory type selected (Standard or Business)
+- [ ] Language chosen
+
+### Recommended Optional Fields
+
+- [ ] Subheading for better context
+- [ ] SEO title, description, and image
+- [ ] Logo and favicon uploaded
+- [ ] Hero image added
+- [ ] Social media profiles linked
+- [ ] Footer configured
+- [ ] Navigation links organized
+
+## What's Next?
+
+Now that you've created your directory, you're ready to:
+
+1. **Customize the design** to match your brand
+2. **Add your first listings** to populate the directory
+3. **Configure email notifications** to keep users informed
+4. **Set up monetization** with subscription plans
+5. **Enable automation** for hands-off management
+
+<Card title="Ready to Launch?" icon="rocket">
+With your directory created, you're well on your way to building a successful platform. Follow the post-creation guides to customize and optimize your directory for success!
+</Card>

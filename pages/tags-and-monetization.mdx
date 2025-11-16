@@ -1,135 +1,451 @@
 ---
 title: "Tags and Monetization"
-description: "Learn how to use tags for flexible organization and set up payment processing and subscription plans to monetize your directory"
+description: "Organize listings with tags and generate revenue through subscription plans"
 ---
 
-# Tags and Monetization
+## Overview
 
-<div style={{ textAlign: 'center', margin: '2rem 0' }}>
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/VIDEO_ID_HERE"
-    title="Tags and Monetization"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-    style={{ maxWidth: '100%', borderRadius: '8px' }}
-  ></iframe>
-</div>
+DirectoryEasy provides powerful tools for organizing your listings with tags and generating revenue through subscription plans. This guide covers everything from creating flexible tag systems to setting up payment processing and building tiered pricing models that drive sustainable revenue.
 
-DirectoryEasy provides powerful tools for organizing your listings with tags and generating revenue through subscription plans. This guide covers everything from creating flexible tag systems to setting up payment processing and building tiered pricing models.
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+  title="Tags and Monetization"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
 
 ## Understanding Tags
 
 Tags are flexible labels you can assign to listings for enhanced organization and filtering. Unlike categories or custom fields, tags provide a more informal way to group listings by special attributes, features, or editorial designations.
 
+### Tags vs Categories vs Custom Fields
+
+<Tabs>
+  <Tab title="Tags">
+    **Flexible, informal labels**
+    
+    **Characteristics**:
+    - Easy to create and assign
+    - No rigid structure required
+    - Can overlap and combine freely
+    - Great for editorial curation
+    
+    **Best for**: Special features, editorial picks, informal attributes
+  </Tab>
+  
+  <Tab title="Categories">
+    **Structured, hierarchical organization**
+    
+    **Characteristics**:
+    - Defined structure (parent/child)
+    - Required for all listings
+    - Primary navigation method
+    - Formal taxonomy
+    
+    **Best for**: Main classification system, core organization
+  </Tab>
+  
+  <Tab title="Custom Fields">
+    **Structured, specific data points**
+    
+    **Characteristics**:
+    - Defined field types
+    - Structured data entry
+    - Filterable and searchable
+    - Schema-based
+    
+    **Best for**: Specific attributes, measurable data, required information
+  </Tab>
+</Tabs>
+
 ### When to Use Tags
 
-Use tags for:
+<AccordionGroup>
+  <Accordion title="Special Features" icon="sparkles">
+    Highlight unique amenities or offerings
+    
+    **Examples**: 
+    - "Outdoor Seating"
+    - "WiFi Available"
+    - "Pet Friendly"
+    - "Wheelchair Accessible"
+    - "Parking Available"
+  </Accordion>
+  
+  <Accordion title="Awards and Recognition" icon="trophy">
+    Showcase achievements and accolades
+    
+    **Examples**:
+    - "Award Winner 2024"
+    - "Best in Category"
+    - "Top Rated"
+    - "Certified Excellence"
+    - "Featured on TV"
+  </Accordion>
+  
+  <Accordion title="Editorial Picks" icon="star">
+    Curate and highlight favorite listings
+    
+    **Examples**:
+    - "Hidden Gem"
+    - "Local Favorite"
+    - "Staff Pick"
+    - "Editor's Choice"
+    - "Trending Now"
+  </Accordion>
+  
+  <Accordion title="Atmosphere Descriptors" icon="palette">
+    Describe ambiance and vibe
+    
+    **Examples**:
+    - "Romantic Atmosphere"
+    - "Family Friendly"
+    - "Casual Dining"
+    - "Upscale"
+    - "Live Music"
+  </Accordion>
+  
+  <Accordion title="Dietary and Special Options" icon="utensils">
+    Highlight dietary accommodations
+    
+    **Examples**:
+    - "Vegetarian Friendly"
+    - "Vegan Options"
+    - "Gluten-Free Available"
+    - "Organic"
+    - "Farm-to-Table"
+  </Accordion>
+</AccordionGroup>
 
-* Special features (e.g., "Outdoor Seating", "WiFi Available")
-* Awards and recognition (e.g., "Award Winner 2024")
-* Editorial picks (e.g., "Hidden Gem", "Local Favorite", "Staff Pick")
-* Atmosphere descriptors (e.g., "Romantic Atmosphere", "Family Friendly")
-* Dietary options (e.g., "Vegetarian Friendly", "Gluten-Free Options")
-
-Tags differ from categories and custom fields in their flexibility—they're ideal for attributes that don't fit into your structured data model.
+<Info>
+Tags differ from categories and custom fields in their flexibility—they're ideal for attributes that don't fit into your structured data model or for editorial curation.
+</Info>
 
 ## Managing Tags
 
-The Tags page displays all your existing tags along with usage statistics.
+Access comprehensive tag management from your dashboard with usage analytics and bulk operations.
 
-### View Existing Tags
+### Accessing Tags
 
-Each tag entry shows:
+Navigate to **Tags** from your dashboard sidebar to see all existing tags with statistics.
 
-* **Tag name**: The label visible to users (e.g., "Breakfast", "Group Dining", "Modern", "Traditional")
-* **Usage count**: The number of listings currently assigned to this tag
+### Tag Information Display
 
-### Tag Actions
+<CardGroup cols={2}>
+  <Card title="Tag Name" icon="tag">
+    The label visible to users
+    
+    **Examples**: "Breakfast", "Group Dining", "Modern", "Traditional"
+  </Card>
+  
+  <Card title="Usage Count" icon="hashtag">
+    Number of listings currently assigned to this tag
+    
+    **Insights**: Identify popular tags and unused ones
+  </Card>
+</CardGroup>
+
+### Tag Management Actions
 
 For each tag, you have three management options:
 
-* **Edit tag**: Rename the tag to better reflect its purpose
-* **Delete tag**: Remove the tag entirely from your directory
-* **Manage**: Assign or remove this tag from specific listings
+<Tabs>
+  <Tab title="Edit Tag">
+    **Rename for clarity**
+    
+    **When to use**:
+    - Tag name isn't clear enough
+    - Better terminology emerges
+    - Consolidating similar tags
+    - Fixing typos or formatting
+    
+    **Impact**: All listings keep the tag, just with new name
+  </Tab>
+  
+  <Tab title="Delete Tag">
+    **Remove tag entirely**
+    
+    **When to use**:
+    - Tag is no longer relevant
+    - Duplicate or redundant tags
+    - Zero usage tags
+    - Cleaning up taxonomy
+    
+    **Impact**: Tag is removed from all listings permanently
+  </Tab>
+  
+  <Tab title="Manage Assignments">
+    **Control which listings have this tag**
+    
+    **When to use**:
+    - Bulk assign tag to multiple listings
+    - Remove tag from specific listings
+    - Curate tag usage
+    - Quality control
+    
+    **Impact**: Fine-tune tag distribution across directory
+  </Tab>
+</Tabs>
 
 ## Creating New Tags
 
-To add a new tag to your directory:
+Add new tags quickly to expand your organizational system.
 
-1. Navigate to the Tags page in your dashboard.
-2. Click **Add New Tag**.
-3. Enter the **Tag Name** in the form.
-4. Click **Add Tag** to create it, or **Cancel** to close without saving.
+<Steps>
+  <Step title="Navigate to Tags">
+    Go to the Tags page in your dashboard.
+  </Step>
+  
+  <Step title="Click Add New Tag">
+    Open the tag creation dialog.
+  </Step>
+  
+  <Step title="Enter Tag Name">
+    Type the tag name (keep it clear and consistent with existing tags).
+  </Step>
+  
+  <Step title="Save or Cancel">
+    Click **Add Tag** to create it, or **Cancel** to close without saving.
+  </Step>
+  
+  <Step title="Assign to Listings">
+    Use the Manage option to add this tag to relevant listings.
+  </Step>
+</Steps>
 
-### Tag Naming Examples
+### Tag Naming Best Practices
 
-For different directory types, consider these tag naming patterns:
+<AccordionGroup>
+  <Accordion title="Be Consistent" icon="check-double">
+    Use consistent formatting and style across all tags
+    
+    - Capitalize consistently ("Pet Friendly" not "pet friendly")
+    - Use similar patterns ("WiFi Available" not "Has WiFi")
+    - Avoid abbreviations unless universally understood
+  </Accordion>
+  
+  <Accordion title="Be Descriptive" icon="text">
+    Make tags self-explanatory
+    
+    - Good: "Vegetarian Friendly"
+    - Bad: "VF"
+    - Good: "Waterfront Dining"
+    - Bad: "WF"
+  </Accordion>
+  
+  <Accordion title="Think About Users" icon="user">
+    Use terms your visitors would search for
+    
+    - User perspective: "Family Friendly" (not "Kids Welcome")
+    - Common language: "Outdoor Seating" (not "Alfresco")
+    - Clear benefits: "Free Parking" (not "Parking")
+  </Accordion>
+</AccordionGroup>
 
-**Restaurants:**
-* "Vegetarian Friendly"
-* "Romantic Atmosphere"
-* "Family Friendly"
-* "Live Music"
-* "Waterfront Dining"
+### Tag Naming Examples by Directory Type
 
-**Services:**
-* "Emergency Available"
-* "Free Consultation"
-* "Licensed & Insured"
-
-**Retail:**
-* "Local Artisan"
-* "Eco-Friendly"
-* "Custom Orders"
+<Tabs>
+  <Tab title="Restaurants">
+    **Feature tags**:
+    - "Vegetarian Friendly"
+    - "Romantic Atmosphere"
+    - "Family Friendly"
+    - "Live Music"
+    - "Waterfront Dining"
+    - "Outdoor Seating"
+    - "Private Dining Available"
+    - "Craft Cocktails"
+    
+    **Dietary tags**:
+    - "Vegan Options"
+    - "Gluten-Free Menu"
+    - "Farm-to-Table"
+    - "Organic Ingredients"
+  </Tab>
+  
+  <Tab title="Services">
+    **Availability tags**:
+    - "Emergency Available"
+    - "24/7 Service"
+    - "Same-Day Appointments"
+    - "Weekend Hours"
+    
+    **Quality tags**:
+    - "Free Consultation"
+    - "Licensed & Insured"
+    - "Certified Professionals"
+    - "Award Winning"
+  </Tab>
+  
+  <Tab title="Retail">
+    **Product tags**:
+    - "Local Artisan"
+    - "Handmade Goods"
+    - "Custom Orders"
+    - "Gift Wrapping"
+    
+    **Value tags**:
+    - "Eco-Friendly"
+    - "Fair Trade"
+    - "Locally Sourced"
+    - "Small Batch"
+  </Tab>
+  
+  <Tab title="Tech/SaaS">
+    **Feature tags**:
+    - "Mobile App"
+    - "API Available"
+    - "Free Trial"
+    - "No Credit Card Required"
+    
+    **Support tags**:
+    - "24/7 Support"
+    - "Onboarding Included"
+    - "Video Tutorials"
+    - "Community Forum"
+  </Tab>
+</Tabs>
 
 ## Using Tags for Filtering
 
-Once created and assigned to listings, tags become powerful filtering tools:
+Tags become powerful filtering tools once assigned to listings.
 
-1. Assign tags to relevant listings through the Manage option.
-2. Users see available tags in the directory filters.
-3. Visitors can filter listings by selecting one or multiple tags.
-4. This helps users quickly find listings with specific attributes they're looking for.
+### How Tag Filtering Works
+
+<Steps>
+  <Step title="Create Tags">
+    Add tags that represent filterable attributes.
+  </Step>
+  
+  <Step title="Assign to Listings">
+    Use the Manage option to add tags to relevant listings.
+  </Step>
+  
+  <Step title="Automatic Filter Display">
+    Tags automatically appear in the directory filter sidebar.
+  </Step>
+  
+  <Step title="User Filtering">
+    Visitors select one or multiple tags to filter results.
+  </Step>
+  
+  <Step title="Refined Results">
+    Directory shows only listings matching selected tags.
+  </Step>
+</Steps>
+
+<Card title="Multi-Tag Filtering" icon="layer-group">
+Users can select multiple tags to narrow their search:
+
+**Example**: User selects "Vegetarian Friendly" + "Outdoor Seating" + "Live Music"
+**Result**: Only listings with all three tags are shown
+
+This helps visitors quickly find exactly what they're looking for!
+</Card>
+
+<Tip>
+Tags complement your category system and custom fields to create a powerful, multi-dimensional search and filter experience.
+</Tip>
 
 ---
 
 ## Monetization Overview
 
-DirectoryEasy provides comprehensive monetization tools, allowing you to generate revenue from your directory through subscription plans, featured placements, and premium services.
+DirectoryEasy provides comprehensive monetization tools, allowing you to generate revenue from your directory through subscription plans, featured placements, and premium services. Turn your directory into a sustainable business!
+
+<CardGroup cols={3}>
+  <Card title="Subscription Plans" icon="credit-card">
+    Recurring revenue from premium listings
+  </Card>
+  
+  <Card title="Featured Placement" icon="star">
+    Premium visibility for paying members
+  </Card>
+  
+  <Card title="Instant Publishing" icon="bolt">
+    Skip the queue with paid upgrades
+  </Card>
+</CardGroup>
 
 ## Payment Settings
 
-Before you can accept payments, you need to connect at least one payment processor. DirectoryEasy supports two major payment providers.
+Before accepting payments, connect at least one payment processor to handle transactions securely.
 
 ### Available Payment Processors
 
-**Stripe Connect**
-* Seamless credit card processing
-* Modern checkout experience
-* Automatic payment handling
-* Lower transaction fees
-* Excellent for recurring subscriptions
+<Tabs>
+  <Tab title="Stripe Connect">
+    **Modern, seamless payment processing**
+    
+    **Advantages**:
+    - ✅ Seamless credit card processing
+    - ✅ Modern, optimized checkout experience
+    - ✅ Automatic payment and subscription handling
+    - ✅ Lower transaction fees (2.9% + 30¢)
+    - ✅ Excellent for recurring subscriptions
+    - ✅ Advanced fraud protection
+    - ✅ Support for multiple currencies
+    - ✅ Instant payouts available
+    
+    **Best for**: Most directories, especially those with recurring subscriptions
+  </Tab>
+  
+  <Tab title="PayPal Express">
+    **Familiar, trusted payment option**
+    
+    **Advantages**:
+    - ✅ Familiar to many users worldwide
+    - ✅ Strong brand recognition and trust
+    - ✅ Alternative for users without credit cards
+    - ✅ Quick and easy setup process
+    - ✅ PayPal balance payments
+    - ✅ Buyer protection features
+    - ✅ International reach
+    
+    **Best for**: Directories targeting PayPal-heavy markets, additional payment flexibility
+  </Tab>
+</Tabs>
 
-**PayPal Express**
-* Familiar payment option for many users
-* Trusted brand recognition
-* Alternative for users without credit cards
-* Quick setup process
+### Setting Up Payment Processing
 
-### Connecting Payment Processors
+<Steps>
+  <Step title="Navigate to Payment Settings">
+    From your dashboard, go to **Payment Settings**.
+  </Step>
+  
+  <Step title="Review Available Processors">
+    See both Stripe Connect and PayPal Express options.
+  </Step>
+  
+  <Step title="Click Connect">
+    Choose one or both processors based on your needs.
+  </Step>
+  
+  <Step title="Complete Authentication">
+    Follow the processor's authentication flow:
+    - **Stripe**: Connect your Stripe account or create one
+    - **PayPal**: Log in and authorize the connection
+  </Step>
+  
+  <Step title="Verify Connection">
+    Confirm that the connection is active and ready.
+  </Step>
+  
+  <Step title="Start Accepting Payments">
+    Once connected, your directory can immediately accept payments!
+  </Step>
+</Steps>
 
-1. Go to **Payment Settings** in your dashboard.
-2. If no payment methods are connected yet, you'll see both Stripe Connect and PayPal Express options.
-3. Click **Connect** on one or both processors depending on your needs.
-4. Follow the authentication process for each provider.
-5. Once connected, your directory can accept payments immediately.
+<Tip>
+**Pro tip**: Connect **both** Stripe and PayPal to give users payment flexibility. Some users prefer PayPal, others prefer credit cards. Offering both maximizes conversions. Funds go directly to your connected accounts.
+</Tip>
 
-> **Tip**: You can connect both Stripe and PayPal to give users payment flexibility. Funds go directly to your connected accounts.
-
-After connecting payment processors, you can create subscription plans and offer premium features.
+<Warning>
+Ensure you complete all verification steps with your payment processor. Some processors may require additional business information or verification before fully activating your account.
+</Warning>
 
 ## Subscription Plans
 
@@ -137,119 +453,448 @@ Subscription plans let you create paid tiers with different features and pricing
 
 ### Enable Subscriptions
 
-Before creating plans:
+<Card title="Activation Required" icon="toggle-on">
+Before creating plans, you must enable subscription functionality:
 
-1. Navigate to **Subscription Plans** in your dashboard.
-2. Toggle **Enable Subscription Plans** to activate subscription functionality.
-3. Without this enabled, all plans remain inactive regardless of configuration.
+**Steps**:
+1. Navigate to **Subscription Plans** in your dashboard
+2. Toggle **Enable Subscription Plans** to activate
+3. Without this enabled, all plans remain inactive regardless of configuration
 
-## Creating a New Plan
+**Important**: This is the master switch for your entire monetization system!
+</Card>
 
-To build a subscription tier:
+## Creating a Subscription Plan
 
-### 1. Plan Name
+Build tiered pricing that drives revenue and provides clear value to members.
 
-Give your plan a clear, descriptive name that helps users understand the tier level:
+### Plan Configuration Fields
 
-* Basic
-* Premium
-* Professional
-* Enterprise
-* Starter
+<AccordionGroup>
+  <Accordion title="1. Plan Name" icon="heading">
+    Give your plan a clear, descriptive name that immediately communicates the tier level.
+    
+    **Examples**:
+    - Starter, Basic, Free
+    - Premium, Plus, Pro
+    - Professional, Business
+    - Enterprise, Ultimate
+    
+    **Best practices**:
+    - Use consistent naming across tiers
+    - Make the hierarchy obvious
+    - Avoid confusing names
+    - Keep it short (1-2 words)
+  </Accordion>
+  
+  <Accordion title="2. Plan Type" icon="repeat">
+    Select the payment model that fits your business strategy.
+    
+    **One-time Payment**:
+    - User pays once
+    - Lifetime access to features
+    - No recurring charges
+    - Good for: Permanent featured placement, one-time boosts
+    
+    **Recurring Subscription**:
+    - Ongoing billing (monthly, yearly)
+    - Continuous access while subscribed
+    - Predictable recurring revenue
+    - Good for: Monthly featured slots, ongoing premium features
+  </Accordion>
+  
+  <Accordion title="3. Description" icon="align-left">
+    Write a compelling summary that sells the plan's value.
+    
+    **Include**:
+    - Main features and benefits
+    - Limitations (if any)
+    - What makes this tier unique
+    - Who it's best suited for
+    
+    **Example**: 
+    "Perfect for growing businesses. Get featured for 30 days, instant publishing, and priority support. Ideal for businesses serious about visibility."
+    
+    **Keep it**:
+    - Concise but informative
+    - Benefit-focused (not just feature lists)
+    - Clear and jargon-free
+  </Accordion>
+  
+  <Accordion title="4. Pricing and Currency" icon="dollar-sign">
+    Set your price point and select the appropriate currency.
+    
+    **Supported Currencies**:
+    - USD, EUR, GBP, CAD, AUD, JPY
+    - And many more
+    
+    **Pricing strategies**:
+    - Research competitor pricing
+    - Consider perceived value
+    - Test different price points
+    - Offer clear value jumps between tiers
+    
+    **Need a currency not listed?** Contact support to have it added.
+  </Accordion>
+  
+  <Accordion title="5. Featured Plan (Optional)" icon="badge-check">
+    Highlight this tier as the recommended or most popular option.
+    
+    **Use featured flag for**:
+    - Most popular choice
+    - Best value tier
+    - Recommended option
+    - Highest margin plan
+    
+    **Visual impact**:
+    - Stands out with badge or highlighting
+    - Draws user attention
+    - Increases conversion to this tier
+    
+    **Strategy**: Feature your most profitable tier or the one you want most users to choose.
+  </Accordion>
+  
+  <Accordion title="6. Plan Features" icon="list">
+    List all features included in this subscription tier.
+    
+    **Common features**:
+    - **Featured duration**: "Featured for 30 days"
+    - **Publishing speed**: "Instant publishing" or "No delays"
+    - **Link type**: "Do-follow backlinks"
+    - **Support level**: "Priority support"
+    - **Ad spots**: "Premium ad placement"
+    - **Media limits**: "Unlimited images"
+    - **Updates**: "Unlimited edits"
+    
+    **Format tips**:
+    - Be specific with numbers ("30 days" not "extended period")
+    - Lead with benefits ("Stand out with featured placement")
+    - Use action words ("Get", "Receive", "Enjoy")
+  </Accordion>
+  
+  <Accordion title="7. Save Your Plan" icon="floppy-disk">
+    Finalize your plan configuration.
+    
+    **Actions**:
+    - Click **Add Plan** to create new tier
+    - Click **Save Changes** if editing existing plan
+    - Click **Delete Plan** to remove (cannot be undone if users subscribed)
+    
+    **After saving**:
+    - Plan appears in user-facing pricing page
+    - Available during listing submission
+    - Can be assigned to existing listings manually
+  </Accordion>
+</AccordionGroup>
 
-Choose names that clearly differentiate between your tiers.
+### Complete Plan Creation Steps
 
-### 2. Plan Type
-
-Select one of two payment models:
-
-* **One-time payment**: Users pay once and receive lifetime access
-* **Recurring subscription**: Ongoing billing at regular intervals (monthly, yearly, etc.)
-
-Choose based on your business model and what makes sense for your directory.
-
-### 3. Description
-
-Write a short, compelling summary explaining what this plan includes:
-
-* Main features and benefits
-* Any limitations or restrictions
-* What makes this tier unique
-* Who this plan is best suited for
-
-Keep it concise but informative to help users make informed decisions.
-
-### 4. Pricing and Currency
-
-Set the price point for your plan and select the appropriate currency:
-
-**Supported Currencies:**
-* USD (US Dollar)
-* EUR (Euro)
-* GBP (British Pound)
-* CAD (Canadian Dollar)
-* AUD (Australian Dollar)
-* JPY (Japanese Yen)
-* And many more
-
-Pick the currency that fits your target market. If you need a currency that's not listed, contact support to have it added.
-
-### 5. Featured Plan (Optional)
-
-Toggle **Featured Plan** to highlight this tier as:
-
-* Most popular choice
-* Recommended option
-* Best value
-
-Featured plans stand out visually, helping guide users toward your preferred tier.
-
-### 6. Plan Features
-
-List all features included in this subscription tier. Common features include:
-
-* **Featured placement**: Number of days the listing appears as featured
-* **Ad spots**: Premium advertising positions
-* **Priority support**: Faster response times
-
-Be specific about what each plan offers so users understand the value.
-
-### 7. Save Your Plan
-
-* Click **Add Plan** to create a new subscription tier
-* Click **Save Changes** if editing an existing plan
+<Steps>
+  <Step title="Enable Subscriptions">
+    Toggle on subscription functionality in your dashboard.
+  </Step>
+  
+  <Step title="Click Add New Plan">
+    Start creating your first subscription tier.
+  </Step>
+  
+  <Step title="Configure Plan Details">
+    Fill in name, type, description, pricing, and features.
+  </Step>
+  
+  <Step title="Set Featured Status">
+    Decide if this plan should be highlighted as recommended.
+  </Step>
+  
+  <Step title="Save Plan">
+    Click "Add Plan" to make it available.
+  </Step>
+  
+  <Step title="Repeat for Additional Tiers">
+    Create multiple plans at different price points.
+  </Step>
+</Steps>
 
 ## Plan Presentation
 
-After creating your subscription plans:
+After creating subscription plans, they integrate automatically into your directory workflow.
 
-1. They automatically appear as options when users submit new listings.
-2. Users can choose their preferred tier during the submission process.
-3. The system handles payment processing and feature activation automatically.
-4. You can edit, disable, or delete plans at any time from the dashboard.
+<Card title="Automatic Integration" icon="puzzle-piece">
+**Where plans appear**:
+1. ✅ Pricing page (auto-generated)
+2. ✅ Listing submission flow (plan selector)
+3. ✅ Upgrade prompts (for existing free listings)
+4. ✅ Member dashboard (manage subscription)
+5. ✅ Admin dashboard (assign manually)
 
-## Monetization Strategy Tips
+**Automatic handling**:
+- Payment processing via connected processor
+- Feature activation upon payment
+- Subscription renewals (for recurring plans)
+- Cancellation and refund management
+- Email notifications to users
+</Card>
 
-Consider these approaches when building your pricing structure:
+## Monetization Strategies
 
-**Tiered Approach:**
-* Free or Basic: Limited features to attract users
-* Premium: Enhanced features for serious users
-* Professional: Full feature access for power users
+Build a pricing structure that drives revenue while providing clear value.
 
-**Value-Based Pricing:**
-* Price based on the value delivered (e.g., featured placement duration)
-* Higher tiers offer significantly more visibility or features
+### Tiered Approach
 
-**Freemium Model:**
-* Offer a free tier with basic functionality
-* Charge for premium features like featured placement, as spots or priority support
+<Tabs>
+  <Tab title="3-Tier Model (Recommended)">
+    **Free/Starter** - Limited features
+    - Standard listing
+    - 30-day publishing delay
+    - No featured placement
+    - No-follow links
+    
+    **Premium** - Enhanced features ($29/mo)
+    - Instant publishing
+    - Featured for 7 days
+    - Do-follow links
+    - Priority support
+    
+    **Professional** - Full access ($99/mo)
+    - Instant publishing
+    - Featured for 30 days
+    - Do-follow links
+    - Priority support
+    - Premium badge
+    - Analytics dashboard
+  </Tab>
+  
+  <Tab title="Freemium Model">
+    **Free** - Basic presence
+    - Standard listing only
+    - Limited visibility
+    
+    **Paid Upgrades**:
+    - Featured placement ($49 one-time)
+    - Instant publishing ($19 one-time)
+    - Extended featured ($29/mo)
+    
+    **Best for**: Maximizing free listings while offering clear upgrade paths
+  </Tab>
+  
+  <Tab title="Value-Based Pricing">
+    Price based on visibility and value delivered:
+    
+    **Bronze** - $19/mo
+    - Featured 7 days
+    - Moderate visibility boost
+    
+    **Silver** - $49/mo
+    - Featured 15 days
+    - High visibility
+    
+    **Gold** - $99/mo
+    - Featured 30 days
+    - Maximum exposure
+    - Premium support
+  </Tab>
+</Tabs>
 
-**Feature Bundling:**
-* Combine complementary features in higher tiers
-* Create clear differentiation between plans
+### Pricing Strategy Tips
+
+<CardGroup cols={2}>
+  <Card title="Anchor High" icon="arrow-up">
+    Show highest tier first to make mid-tier seem reasonable
+    
+    **Psychology**: Makes Premium look like a bargain compared to Enterprise
+  </Card>
+  
+  <Card title="Feature Most Popular" icon="star">
+    Highlight your target tier as "Most Popular"
+    
+    **Result**: 60%+ of users choose the featured plan
+  </Card>
+  
+  <Card title="Clear Value Jumps" icon="chart-line">
+    Each tier should offer obviously more value
+    
+    **Example**: 3x price = 5x featured days + extras
+  </Card>
+  
+  <Card title="Annual Discounts" icon="calendar">
+    Offer 15-20% discount for annual plans
+    
+    **Benefit**: Better cash flow, reduced churn
+  </Card>
+</CardGroup>
+
+### Feature Bundling Examples
+
+<Tabs>
+  <Tab title="SaaS Directory">
+    ```plaintext
+    Starter (Free):
+    - Basic listing
+    - 60-day publishing delay
+    - No featured
+    - No-follow links
+    
+    Growth ($49/mo):
+    - Instant publishing
+    - Featured for 14 days
+    - Do-follow links
+    - Coupon code support
+    - Email support
+    
+    Enterprise ($149/mo):
+    - Instant publishing
+    - Featured for 60 days
+    - Do-follow links
+    - Coupon codes
+    - Top of category placement
+    - Priority support
+    - Analytics access
+    - Featured in newsletter
+    ```
+  </Tab>
+  
+  <Tab title="Local Business Directory">
+    ```plaintext
+    Free:
+    - Basic listing
+    - 30-day delay
+    - Standard placement
+    
+    Business ($29/mo):
+    - Instant publishing
+    - Featured for 7 days
+    - Enhanced listing with images
+    - Operating hours display
+    - Phone click-tracking
+    
+    Premium ($79/mo):
+    - Instant publishing
+    - Featured for 30 days
+    - Priority placement in category
+    - Unlimited images
+    - Video embed
+    - Review management
+    - Monthly performance report
+    ```
+  </Tab>
+</Tabs>
+
+## Managing Existing Plans
+
+<AccordionGroup>
+  <Accordion title="Editing Plans" icon="pen">
+    Modify plan details anytime:
+    
+    **Can change**:
+    - Plan name
+    - Description
+    - Features list
+    - Featured status
+    
+    **Cannot change** (for active subscriptions):
+    - Price (affects existing subscribers)
+    - Plan type (one-time vs recurring)
+    
+    **Best practice**: Create new plan if price change needed
+  </Accordion>
+  
+  <Accordion title="Disabling Plans" icon="ban">
+    Hide plans from new subscribers:
+    
+    **What happens**:
+    - Plan no longer shown to new users
+    - Existing subscribers continue unaffected
+    - Can be re-enabled anytime
+    
+    **Use case**: Temporary promotions, seasonal plans, testing
+  </Accordion>
+  
+  <Accordion title="Deleting Plans" icon="trash">
+    Permanently remove plans:
+    
+    **Warning**: Cannot delete if active subscribers exist
+    **Process**: Disable plan first, wait for subscriptions to end, then delete
+    **Alternative**: Keep disabled permanently instead of deleting
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Start with 3 Tiers" icon="layer-group">
+    Too many choices overwhelm users. 3 tiers is the sweet spot.
+  </Card>
+  
+  <Card title="Test Pricing" icon="flask">
+    A/B test different price points to find optimal conversion.
+  </Card>
+  
+  <Card title="Communicate Value" icon="megaphone">
+    Focus on benefits, not just features. Show ROI.
+  </Card>
+  
+  <Card title="Monitor Conversion" icon="chart-line">
+    Track which tier converts best and optimize accordingly.
+  </Card>
+  
+  <Card title="Update Regularly" icon="rotate">
+    Review and adjust plans quarterly based on performance.
+  </Card>
+  
+  <Card title="Offer Trials" icon="calendar-days">
+    Consider free trials or money-back guarantees to reduce friction.
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Plans not showing to users" icon="eye-slash">
+    **Check**:
+    - Subscription system is enabled (master toggle)
+    - Plan is active (not disabled)
+    - Payment processor is connected
+    - Plan has price set correctly
+  </Accordion>
+  
+  <Accordion title="Payments failing" icon="credit-card-slash">
+    **Verify**:
+    - Payment processor connection is active
+    - Processor account is fully verified
+    - Currency is supported by processor
+    - User's payment method is valid
+  </Accordion>
+  
+  <Accordion title="Features not activating" icon="bolt-slash">
+    **Ensure**:
+    - Payment completed successfully
+    - Plan is assigned to listing
+    - Automation rules not conflicting
+    - Feature is properly configured in plan
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Automation" icon="wand-magic-sparkles" href="/pages/automation">
+    Set up automated publishing delays and featured duration
+  </Card>
+  
+  <Card title="Managing Listings" icon="list-check" href="/pages/managing-listings">
+    Assign plans to listings and manage subscriptions
+  </Card>
+  
+  <Card title="Members Dashboard" icon="users" href="/pages/members-dashboard">
+    Understand how members view and manage their plans
+  </Card>
+  
+  <Card title="Miscellaneous Settings" icon="sliders" href="/pages/miscellaneous-settings">
+    Configure additional monetization features
+  </Card>
+</CardGroup>
 
 ---
 
-With tags for flexible organization and subscription plans for monetization, you have all the tools needed to build a well-organized, profitable directory business.
+With tags for flexible organization and subscription plans for monetization, you have all the tools needed to build a well-organized, profitable directory business. Start with simple plans, monitor performance, and optimize based on data and user feedback!
 

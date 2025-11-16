@@ -1,210 +1,721 @@
 ---
-title: "Managing Listings: Reviews, Favorites, Status, Features & Import/Export"
-description: "Learn how members can submit reviews, favorite listings, and how to manage listing statuses, verification, featured placement, CSV import/export, and bulk operations"
+title: "Managing Listings"
+description: "Review, moderate, and manage listings with powerful tools and bulk operations"
 ---
 
-# Managing Listings
+## Overview
 
-<div style={{ textAlign: 'center', margin: '2rem 0' }}>
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/FoUwGs8bf_o"
-    title="Managing Listings, Reviews, and Favorites"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-    style={{ maxWidth: '100%', borderRadius: '8px' }}
-  ></iframe>
-</div>
+DirectoryEasy provides comprehensive tools for managing member interactions, listing reviews, favorites, and bulk operations. From review moderation to CSV import/export and advanced listing management, you have complete control over your directory's content.
 
-DirectoryEasy provides comprehensive tools for managing member interactions, listing reviews, favorites, and bulk operations. This guide covers everything from review moderation to advanced listing management features.
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/FoUwGs8bf_o"
+  title="Managing Listings, Reviews, and Favorites"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
 
 ## Member Reviews
 
-Members can easily add reviews to any directory listing. The review system is designed to maintain quality while encouraging community engagement.
+Enable community engagement while maintaining quality through moderated reviews.
 
-### How Reviews Work
+### How the Review System Works
 
-1. Members submit reviews through the listing detail page.
-2. Every review is automatically set to **Pending** status until approved.
-3. Directory owners receive instant email notifications when new reviews are submitted.
-4. Reviews become publicly visible only after owner approval.
+<Steps>
+  <Step title="Member Submits Review">
+    Members submit reviews through listing detail pages with ratings and comments.
+  </Step>
+  
+  <Step title="Automatic Pending Status">
+    Every review is automatically set to **Pending** status until approved.
+  </Step>
+  
+  <Step title="Email Notification">
+    Directory owners receive instant email notifications for new reviews.
+  </Step>
+  
+  <Step title="Owner Approval">
+    Review the submission and approve or reject it.
+  </Step>
+  
+  <Step title="Public Visibility">
+    Approved reviews become publicly visible immediately.
+  </Step>
+</Steps>
 
-> **Important**: Ensure your SMTP email settings are properly configured to receive review notifications.
+<Warning>
+**Critical**: Ensure your SMTP email settings are properly configured to receive review notifications. Without proper email setup, you won't know when reviews are submitted!
+</Warning>
 
-### Approving Reviews
+### Managing Reviews
 
-To manage incoming reviews:
+<Card title="Review Dashboard" icon="star">
+Access reviews from your dashboard sidebar:
 
-1. Open your dashboard sidebar and go to **Reviews**.
-2. Review pending submissions and decide whether to approve or reject them.
-3. Approved reviews become visible to the public immediately.
+**Path**: Dashboard → Reviews
 
-Listing owners can view reviews left on their own listings directly from their member dashboard, giving them insight into customer feedback.
+**Actions available**:
+- View all pending reviews
+- Read review content and ratings
+- See which listing was reviewed
+- Check reviewer information
+- Approve or reject reviews
+- Moderate inappropriate content
+</Card>
+
+### Review Moderation Best Practices
+
+<AccordionGroup>
+  <Accordion title="Respond Quickly" icon="bolt">
+    Review submissions promptly to keep content fresh and engage your community actively.
+  </Accordion>
+  
+  <Accordion title="Set Clear Guidelines" icon="book">
+    Communicate review guidelines to members (respectful, constructive, relevant).
+  </Accordion>
+  
+  <Accordion title="Be Consistent" icon="balance-scale">
+    Apply the same moderation standards to all reviews to maintain fairness.
+  </Accordion>
+  
+  <Accordion title="Allow Negative Reviews" icon="comment-slash">
+    Don't reject reviews just because they're negative—authenticity builds trust. Only reject spam or policy violations.
+  </Accordion>
+</AccordionGroup>
+
+### Listing Owner Access
+
+<Info>
+Listing owners can view reviews left on their own listings directly from their member dashboard, giving them valuable insight into customer feedback.
+</Info>
 
 ## Favorites System
 
-The favorites feature allows members to bookmark listings they're interested in for easy access later.
+The favorites feature allows members to bookmark listings for easy access later.
 
-### Using Favorites
+### How Favorites Work
 
-* Members can add any listing to their favorites with a single click.
-* All favorited listings are accessible from the member dashboard.
-* This feature helps members track businesses or services they want to remember.
+<CardGroup cols={2}>
+  <Card title="For Members" icon="heart">
+    - Add any listing to favorites with one click
+    - Access all favorited listings from dashboard
+    - Track businesses for later research
+    - No limit on number of favorites
+  </Card>
+  
+  <Card title="For Directory Owners" icon="chart-simple">
+    - No configuration required
+    - Works automatically once enabled
+    - Can track popular listings
+    - Indicates user interest patterns
+  </Card>
+</CardGroup>
 
-The favorites system is simple and intuitive, requiring no configuration from the directory owner.
+<Tip>
+The favorites system is simple, intuitive, and requires no configuration from the directory owner. It works out of the box!
+</Tip>
 
 ## Listing Management Dashboard
 
-After a listing is submitted to your directory, you have powerful tools to manage it individually or in bulk.
+After listings are submitted, you have powerful tools to manage them individually or in bulk.
 
-### Available Actions
+### Accessing Listing Management
 
-From the listings section, you can:
+Navigate to **Listings** from your dashboard sidebar to see all submissions with filtering and bulk action options.
 
-* **Delete listings**: Remove individual listings or multiple at once.
-* **Change status**: Update listing status one at a time or in bulk.
-* **Export data**: Download listings as CSV files for external use.
-* **Import data**: Upload new listings or updates via CSV.
+### Available Management Actions
 
-### Listing Status Options
+<Tabs>
+  <Tab title="Individual Actions">
+    Manage listings one at a time:
+    
+    - **Edit listing**: Update any field or information
+    - **Change status**: Move between Pending, Approved, Published, Rejected
+    - **Toggle featured**: Enable/disable premium placement
+    - **Set verification**: Mark as verified or claimable
+    - **Assign plan**: Change subscription tier
+    - **Delete listing**: Remove permanently
+  </Tab>
+  
+  <Tab title="Bulk Actions">
+    Apply changes to multiple listings at once:
+    
+    - **Bulk status change**: Update status for selected listings
+    - **Bulk delete**: Remove multiple listings
+    - **Bulk verification**: Toggle verification for selections
+    - **Bulk plan assignment**: Assign subscription plans
+    - **Export selected**: Download specific listings as CSV
+  </Tab>
+  
+  <Tab title="Import/Export">
+    Manage data in bulk:
+    
+    - **Export all**: Download complete listing database
+    - **Export filtered**: Download based on current filters
+    - **Import CSV**: Upload new or updated listings
+    - **Update existing**: Modify listings via CSV reimport
+  </Tab>
+</Tabs>
 
-Every listing can have one of four statuses:
+## Listing Status Management
 
-* **Pending**: Newly submitted listings awaiting review.
-* **Rejected**: Listings that don't meet your criteria.
-* **Approved**: Reviewed and accepted, but not yet public.
-* **Published**: Live and visible to all visitors.
+Control the lifecycle and visibility of every listing.
 
-> **Remember**: Only published listings are visible to the public. Approved listings remain hidden until you publish them.
+### Status Options
+
+<Tabs>
+  <Tab title="Pending">
+    **Newly submitted, awaiting review**
+    
+    **Characteristics**:
+    - Initial state after submission
+    - Not visible to public
+    - Editable by submitter
+    - Requires owner action
+    
+    **When to use**:
+    - Default for all new submissions
+    - Listings need review before approval
+    
+    **Next steps**: Review → Approve, Publish, or Reject
+  </Tab>
+  
+  <Tab title="Rejected">
+    **Did not meet criteria**
+    
+    **Characteristics**:
+    - Not visible to public
+    - Submitter may receive rejection reason
+    - Can be resubmitted after corrections
+    
+    **When to use**:
+    - Spam or low-quality submissions
+    - Off-topic listings
+    - Policy violations
+    - Incomplete information
+    
+    **Communication**: Always provide feedback when rejecting
+  </Tab>
+  
+  <Tab title="Approved">
+    **Reviewed and accepted, not yet public**
+    
+    **Characteristics**:
+    - Passed quality review
+    - Not visible to public yet
+    - Can be published anytime
+    - Often combined with automation rules
+    
+    **When to use**:
+    - Free tier listings with publishing delays
+    - Batch processing approvals
+    - Scheduling future publications
+    - Automation workflows
+    
+    **Next step**: Manually publish or wait for automation
+  </Tab>
+  
+  <Tab title="Published">
+    **Live and publicly visible**
+    
+    **Characteristics**:
+    - Visible to all directory visitors
+    - Appears in search results
+    - Included in filters and categories
+    - Fully indexed
+    
+    **When to use**:
+    - Premium/paid listings (immediate)
+    - Owner-added listings
+    - After publishing delay completes
+    - Quality submissions ready for visibility
+  </Tab>
+</Tabs>
+
+<Warning>
+**Remember**: Only **Published** listings are visible to the public. Approved listings remain hidden until you publish them manually or automation rules trigger publication.
+</Warning>
 
 ## Verification and Claim Settings
 
-The verification toggle controls whether a listing can be claimed by business owners.
+Control whether listings can be claimed by business owners.
 
-### Verified Listings (Toggle Checked)
+### Verification Toggle
 
-When a listing is marked as verified:
+<Tabs>
+  <Tab title="Verified (Checked)">
+    **Listing is protected from claims**
+    
+    **What happens**:
+    - Nobody can claim ownership
+    - Listing is "locked" from claim system
+    - Shows verified badge (if enabled in theme)
+    
+    **When to use**:
+    - Listings you've added yourself as directory owner
+    - Listings already claimed by rightful owners
+    - Verified business ownership
+    
+    **Note**: When members successfully claim listings, this toggle is automatically checked by default.
+  </Tab>
+  
+  <Tab title="Unverified (Unchecked)">
+    **Listing is available for claiming**
+    
+    **What happens**:
+    - Business owners can claim this listing
+    - Shows up in claim search for members
+    - Verification process can begin
+    
+    **When to use**:
+    - Owner-added listings not yet claimed
+    - Encouraging business owners to take control
+    - Building community engagement
+    - Crowdsourced directory content
+    
+    **Strategy**: Leave unclaimed to incentivize business owners to join and manage their profiles.
+  </Tab>
+</Tabs>
 
-* The listing is protected from claims by other users.
-* Nobody can claim ownership of this listing.
-* Use this setting for:
-  * Listings you've added yourself as the directory owner.
-  * Listings already claimed by their rightful owners.
-
-> **Note**: When members claim their own listings, this toggle is automatically checked by default.
-
-### Unverified Listings (Toggle Unchecked)
-
-When a listing is unverified:
-
-* The listing becomes available for claiming.
-* Business owners can claim and manage their own listings.
-* Perfect for encouraging business owners to take ownership of their profiles.
+<Tip>
+**Growth strategy**: Add businesses to your directory and leave them unverified. Business owners will discover their listings and sign up to claim them, growing your member base organically!
+</Tip>
 
 ## Featured Listings
 
-Featured listings receive special visibility and prominence in your directory, making them valuable for monetization through subscription plans.
+Featured listings receive special visibility and prominence, making them valuable for monetization.
 
 ### Featured Display Options
 
-You can choose how featured listings appear:
+Choose how featured listings appear in your directory:
 
-1. **Slider presentation**: Display featured listings in a prominent slider on the homepage.
-2. **Top positioning**: Force listings to stay at the top with a colorful border.
-3. **Both options**: Combine slider and top positioning for maximum visibility.
+<AccordionGroup>
+  <Accordion title="Slider Presentation" icon="images">
+    Display featured listings in a prominent slider/carousel on the homepage.
+    
+    **Benefits**:
+    - Maximum visibility
+    - Eye-catching presentation
+    - Rotates through multiple featured listings
+    - Above-the-fold placement
+    
+    **Best for**: Showcasing premium subscribers
+  </Accordion>
+  
+  <Accordion title="Top Positioning" icon="arrow-up">
+    Force featured listings to stay at the top of results with visual distinction.
+    
+    **Benefits**:
+    - Consistent top placement
+    - Colorful border or badge
+    - Always visible in search results
+    - Premium positioning
+    
+    **Best for**: Guaranteed visibility for paid plans
+  </Accordion>
+  
+  <Accordion title="Both Options" icon="clone">
+    Combine slider and top positioning for maximum visibility.
+    
+    **Benefits**:
+    - Ultimate exposure
+    - Multiple touchpoints
+    - Highest value for premium subscribers
+    
+    **Best for**: Top-tier subscription plans
+  </Accordion>
+</AccordionGroup>
 
-### Featured Status Settings
+### Featured Status Controls
 
-* **Featured toggle**: Enable to give the listing premium visibility.
-* **Exempt from automation**: Check this to prevent automation rules from affecting the featured status—useful for listings with permanent featured placement.
+<CardGroup cols={2}>
+  <Card title="Featured Toggle" icon="star">
+    Enable to give the listing premium visibility immediately.
+    
+    **Manual control**: Turn on/off anytime
+  </Card>
+  
+  <Card title="Exempt from Automation" icon="robot">
+    Check this to prevent automation rules from affecting featured status.
+    
+    **Use case**: Permanent featured placement, special arrangements, testing
+  </Card>
+</CardGroup>
 
-> **Tip**: Featured placement is often what you promise members when they subscribe to premium plans, giving their listings more exposure.
-
-We'll cover automation rules for managing featured status in a separate guide.
+<Info>
+Featured placement is often what you promise members when they subscribe to premium plans. It's a key monetization feature that gives listings more exposure and drives upgrades.
+</Info>
 
 ## Subscription Plans
 
-Assign subscription plans to control which features each listing has access to.
+Assign and manage subscription plans to control listing features and permissions.
 
-### How Plans Work
+### How Plan Assignment Works
 
-1. Select a plan from the dropdown menu in the listing settings.
-2. **Starter**: The default plan assigned to all new listings.
-3. **Other plans**: Unlock additional features like featured placement.
-4. Click **Update** to save your changes.
+<Steps>
+  <Step title="Open Listing Settings">
+    Click on a listing to view its details and settings.
+  </Step>
+  
+  <Step title="Find Plan Dropdown">
+    Locate the subscription plan selector.
+  </Step>
+  
+  <Step title="Select Plan">
+    Choose from available plans:
+    - **Starter** (default for all new listings)
+    - **Premium**, **Pro**, or other custom plans
+  </Step>
+  
+  <Step title="Save Changes">
+    Click **Update** to apply the new plan.
+  </Step>
+</Steps>
 
-You can apply plan changes to individual listings or update multiple listings at once using bulk actions.
+### Plan-Based Features
 
-Configuration of subscription plans and their features is covered in detail in another guide.
+Different plans can offer different features:
+
+| Feature | Starter | Premium | Pro |
+|---------|---------|---------|-----|
+| Publish Immediately | ❌ | ✅ | ✅ |
+| Featured Days | 0 | 7 | 30 |
+| Publishing Delay | 30 days | None | None |
+| Do-follow Links | ❌ | ✅ | ✅ |
+| Priority Support | ❌ | ❌ | ✅ |
+
+<Tip>
+You can apply plan changes individually or update multiple listings at once using bulk actions.
+</Tip>
 
 ## Importing and Exporting Listings
 
-DirectoryEasy supports bulk operations through CSV files, making it easy to migrate existing data or make mass updates.
+Handle bulk operations through CSV files for efficient data management.
 
 ### Exporting Listings
 
-1. Go to the listings section in your dashboard.
-2. Click the **Export** button to download all listings as a CSV file.
-3. Use this file as a template for future imports or external analysis.
+<Steps>
+  <Step title="Navigate to Listings">
+    Go to the listings section in your dashboard.
+  </Step>
+  
+  <Step title="Apply Filters (Optional)">
+    Filter by status, category, or other criteria if you want a specific subset.
+  </Step>
+  
+  <Step title="Click Export">
+    Click the **Export** button to download listings as CSV.
+  </Step>
+  
+  <Step title="Use the File">
+    - Template for future imports
+    - External analysis
+    - Backup your data
+    - Edit in spreadsheet software
+  </Step>
+</Steps>
 
 ### Importing Listings
 
-The import process supports both new listings and updates to existing ones:
+The import process supports both new listings and updates to existing ones.
 
-1. Click the **Import** button in the listings section.
-2. Upload your CSV file.
-3. Review the field mapping (if necessary).
-4. Click **Import** to complete the process.
+<Steps>
+  <Step title="Prepare Your CSV">
+    Use the correct format and column names (see best practices below).
+  </Step>
+  
+  <Step title="Click Import">
+    Navigate to listings section and click the **Import** button.
+  </Step>
+  
+  <Step title="Upload File">
+    Select and upload your CSV file.
+  </Step>
+  
+  <Step title="Review Field Mapping">
+    System attempts auto-mapping; adjust if necessary.
+  </Step>
+  
+  <Step title="Complete Import">
+    Click **Import** to process the file.
+  </Step>
+  
+  <Step title="Review Results">
+    Check for any errors or warnings; listings are added/updated.
+  </Step>
+</Steps>
 
 ### Best Practices for CSV Imports
 
-For the smoothest import experience, follow these recommendations:
+<Tabs>
+  <Tab title="Option 1: Use Template">
+    **Download and fill official template**
+    
+    **Process**:
+    1. Download the official template from import page
+    2. Fill with your data using correct column names
+    3. Import without manual field mapping
+    
+    **Best for**: First-time imports, clean datasets
+  </Tab>
+  
+  <Tab title="Option 2: Export and Modify (Recommended)">
+    **Create your own template from existing data**
+    
+    **Process**:
+    1. Submit 2-3 sample listings through the form with all fields filled
+    2. Export those listings as CSV
+    3. Replace sample data with your actual data
+    4. Import the file back
+    
+    **Benefits**:
+    - Correct column names guaranteed
+    - Proper value formatting
+    - See exact format for each field
+    - Custom fields included automatically
+    
+    **Best for**: Large imports, custom fields, ensuring accuracy
+  </Tab>
+</Tabs>
 
-**Option 1: Use the Template**
+### Import Best Practices
 
-1. Download the official template from the import page.
-2. Fill it with your data using the correct column names.
-3. Import without needing to map fields manually.
+<AccordionGroup>
+  <Accordion title="Column Names Matter" icon="table-columns">
+    Column names must match system field names exactly.
+    
+    **Custom fields**: Use format `custom_<fieldName>`
+    **Example**: Field `cuisine_type` becomes `custom_cuisine_type`
+  </Accordion>
+  
+  <Accordion title="Value Formatting" icon="check-double">
+    Use correct value formats:
+    
+    - **Booleans**: `true` or `false` (not `yes/no`, `1/0`, etc.)
+    - **Featured status**: `false` for not featured
+    - **Dates**: Use consistent format (YYYY-MM-DD recommended)
+    - **Numbers**: Plain numbers without formatting
+  </Accordion>
+  
+  <Accordion title="Handle Special Characters" icon="quote-right">
+    Properly escape special characters:
+    
+    - Use UTF-8 encoding
+    - Escape commas in text: "Company, Inc." → `"Company, Inc."`
+    - Escape quotes: Use double quotes `""`
+  </Accordion>
+  
+  <Accordion title="Test with Small Batch" icon="flask">
+    Always test with a small batch first:
+    
+    1. Import 5-10 listings first
+    2. Review for errors or formatting issues
+    3. Fix problems
+    4. Import the rest
+  </Accordion>
+</AccordionGroup>
 
-**Option 2: Export and Modify (Recommended)**
+### Field Mapping for Custom Fields
 
-1. Submit 2-3 sample listings through the form with all fields filled in.
-2. Export those listings as CSV.
-3. Replace the sample data with your actual scraped or collected data.
-4. Import the file back.
+<Card title="Mapping Custom Fields" icon="link">
+If your CSV contains columns not automatically recognized:
 
-This approach ensures:
+**Process**:
+1. Create the corresponding custom field first in **Customization → Custom Fields**
+2. During import, search for your column name in mapping interface
+3. Match it to the newly created custom field
+4. Complete the import
 
-* Correct column names that the system recognizes.
-* Proper value formatting (e.g., `false` for unchecked featured status, not `no` or `-1`).
-* Clear reference for how each field should be formatted.
-
-### Field Mapping
-
-If your CSV contains columns not recognized by DirectoryEasy:
-
-1. Create the corresponding custom field first in **Customization → Custom Fields**.
-2. During import, search for your column name in the mapping interface.
-3. Match it to the newly created custom field.
-4. Complete the import.
-
-If column names in your CSV exactly match your custom field names, they'll be automatically mapped without manual intervention.
+**Auto-mapping**: If CSV column names exactly match your custom field names (format: `custom_fieldname`), they'll be automatically mapped.
+</Card>
 
 ## Bulk Operations
 
-Apply changes to multiple listings simultaneously:
+Save significant time by managing multiple listings simultaneously.
 
-* **Select multiple listings** using checkboxes.
-* **Update status** for all selected items at once.
-* **Change verification settings** in bulk.
-* **Assign subscription plans** to multiple listings.
-* **Delete unwanted listings** together.
+### Available Bulk Actions
 
-Bulk operations save significant time when managing large directories with hundreds or thousands of listings.
+<CardGroup cols={2}>
+  <Card title="Status Updates" icon="signal">
+    Change status for multiple listings at once
+    
+    **Example**: Approve 50 pending listings simultaneously
+  </Card>
+  
+  <Card title="Bulk Delete" icon="trash">
+    Remove multiple unwanted listings together
+    
+    **Warning**: This action cannot be undone
+  </Card>
+  
+  <Card title="Verification Settings" icon="shield-check">
+    Toggle verification for multiple listings
+    
+    **Use case**: Verify batch of owner-added listings
+  </Card>
+  
+  <Card title="Plan Assignment" icon="tag">
+    Assign subscription plans to multiple listings
+    
+    **Example**: Upgrade 20 listings to Premium plan
+  </Card>
+</CardGroup>
+
+### Using Bulk Actions
+
+<Steps>
+  <Step title="Select Listings">
+    Use checkboxes to select listings you want to modify.
+  </Step>
+  
+  <Step title="Choose Action">
+    From bulk actions dropdown, select the operation.
+  </Step>
+  
+  <Step title="Configure Settings">
+    Set the new value (status, plan, etc.).
+  </Step>
+  
+  <Step title="Apply Changes">
+    Confirm and apply to all selected listings.
+  </Step>
+  
+  <Step title="Verify Results">
+    Check that changes were applied correctly.
+  </Step>
+</Steps>
+
+<Tip>
+Bulk operations are essential when managing large directories with hundreds or thousands of listings. Master these tools to work efficiently!
+</Tip>
+
+## Advanced Management Tips
+
+<AccordionGroup>
+  <Accordion title="Use Filters Effectively" icon="filter">
+    Apply filters before bulk actions to target specific listing groups:
+    
+    - Filter by status to bulk-approve pending listings
+    - Filter by plan to identify upgrade candidates
+    - Filter by category for category-specific operations
+  </Accordion>
+  
+  <Accordion title="Regular Maintenance" icon="broom">
+    Schedule regular maintenance sessions:
+    
+    - Weekly: Review and approve/reject pending submissions
+    - Monthly: Check for outdated listings
+    - Quarterly: Export data for backups
+  </Accordion>
+  
+  <Accordion title="Monitor Review Quality" icon="shield-halved">
+    Keep your review system healthy:
+    
+    - Respond to reviews within 24-48 hours
+    - Reject spam and inappropriate content
+    - Allow authentic negative reviews
+    - Engage with active reviewers
+  </Accordion>
+  
+  <Accordion title="Leverage Automation" icon="wand-sparkles">
+    Combine manual management with automation:
+    
+    - Use automation for publishing delays
+    - Manually manage premium listings
+    - Set featured duration via automation
+    - Override automation when needed
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="CSV import failing" icon="file-circle-xmark">
+    **Common issues**:
+    - Column names don't match (check spelling, format)
+    - Wrong value format (use `true/false` not `yes/no`)
+    - Special characters not escaped
+    - File encoding issues (use UTF-8)
+    
+    **Solution**: Export sample listings and use that format
+  </Accordion>
+  
+  <Accordion title="Reviews not appearing after approval" icon="eye-slash">
+    **Check**:
+    - Status is set to "Approved" (not pending)
+    - Review system is enabled in settings
+    - Cache cleared on frontend
+    - No theme display issues
+  </Accordion>
+  
+  <Accordion title="Bulk actions not working" icon="exclamation-triangle">
+    **Possible causes**:
+    - No listings selected (check checkboxes)
+    - Browser timeout on very large batches
+    - Permission issues
+    
+    **Solution**: Try smaller batches (50-100 at a time)
+  </Accordion>
+  
+  <Accordion title="Featured listings not showing" icon="star-half-stroke">
+    **Verify**:
+    - Featured toggle is enabled for listings
+    - Featured display is configured in settings
+    - Slider or top positioning is enabled
+    - Theme supports featured display
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices Summary
+
+<CardGroup cols={2}>
+  <Card title="Review Promptly" icon="clock">
+    Respond to submissions within 24-48 hours to maintain engagement
+  </Card>
+  
+  <Card title="Use Bulk Actions" icon="list-check">
+    Process similar listings together to save time
+  </Card>
+  
+  <Card title="Export Regularly" icon="download">
+    Back up your listings data monthly or quarterly
+  </Card>
+  
+  <Card title="Clear Communication" icon="comment">
+    Provide feedback when rejecting listings or reviews
+  </Card>
+  
+  <Card title="Leverage Automation" icon="robot">
+    Combine automation with manual oversight for efficiency
+  </Card>
+  
+  <Card title="Monitor Quality" icon="shield-check">
+    Maintain high standards for both listings and reviews
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Automation" icon="wand-magic-sparkles" href="/pages/automation">
+    Set up automated workflows for publishing delays and featured listings
+  </Card>
+  
+  <Card title="Tags & Monetization" icon="tags" href="/pages/tags-and-monetization">
+    Configure subscription plans and pricing strategies
+  </Card>
+  
+  <Card title="Members Dashboard" icon="users" href="/pages/members-dashboard">
+    Understand the member experience and features
+  </Card>
+  
+  <Card title="Adding Listings" icon="plus-circle" href="/pages/adding-listings">
+    Learn about submission controls and custom fields
+  </Card>
+</CardGroup>
 
 ---
 
-With these tools, you can efficiently manage your directory's listings, maintain quality through review moderation, and provide members with a rich, interactive experience.
-
+With these powerful management tools, you can efficiently manage your directory's listings, maintain quality through review moderation, and provide members with a rich, interactive experience.

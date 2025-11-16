@@ -1,130 +1,695 @@
 ---
-title: "Adding Listings and Custom Fields"
-description: "Learn how to control listing submissions and build custom fields in your directory"
+title: "Adding Listings"
+description: "Control listing submissions and build custom fields for your directory"
 ---
 
-# Adding Listings and Custom Fields
+## Overview
 
-<div style={{ textAlign: 'center', margin: '2rem 0' }}>
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/3v-1DJOU7JI"
-    title="Adding Listings and Custom Fields"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-    style={{ maxWidth: '100%', borderRadius: '8px' }}
-  ></iframe>
-</div>
+DirectoryEasy provides flexible control over who can submit listings, how they're reviewed, and what information is collected. With custom fields, you can tailor the submission process to match your directory's unique requirements.
 
-Three types of users can submit listings in DirectoryEasy: the directory owner, registered members, and visitors. You can tailor who is allowed to submit, how listings are reviewed, and which information must be collected.
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/3v-1DJOU7JI"
+  title="Adding Listings and Custom Fields"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
 
-## Choose Who Can Submit Listings
+<Info>
+Three types of users can submit listings: **directory owners**, **registered members**, and **visitors**. You control who has access and what they can do.
+</Info>
 
-1. Open your dashboard sidebar and go to **Customization → Misc → Listings**.
-2. Use the **Who can submit listings** setting to choose one of these modes:
-   * **Owner only**: hide the public submission button and keep the sign-up page inaccessible.
-   * **Owner + members**: require users to sign in or create an account before submitting.
-   * **Anyone**: allow guests to submit without signing up (submissions still enter review).
-3. Decide whether submissions are publicly visible right away or only after users create an account.
+## Submission Permissions
 
-> Tip: Even when guests can submit, every listing enters the review queue first—nothing publishes without your approval.
+Configure who can submit listings to your directory based on your business model and goals.
+
+### Accessing Submission Settings
+
+<Steps>
+  <Step title="Open Dashboard Sidebar">
+    Navigate to your DirectoryEasy dashboard.
+  </Step>
+  
+  <Step title="Go to Customization">
+    Click **Customization → Misc → Listings**.
+  </Step>
+  
+  <Step title="Configure Permissions">
+    Use the **"Who can submit listings"** setting to choose your preferred mode.
+  </Step>
+</Steps>
+
+### Permission Modes
+
+<Tabs>
+  <Tab title="Owner Only">
+    **Maximum control** - Only you can add listings
+    
+    **What happens**:
+    - Public submission button is hidden
+    - Sign-up page becomes inaccessible
+    - You curate all content manually
+    
+    **Best for**:
+    - Highly curated directories
+    - Quality-first approach
+    - Directories in early stages
+    - Industry-specific professional listings
+    
+    **Example**: A curated directory of award-winning architects where you personally vet and add each entry.
+  </Tab>
+  
+  <Tab title="Owner + Members">
+    **Gated submissions** - Registration required
+    
+    **What happens**:
+    - Users must sign in or create account before submitting
+    - Public submission button redirects to sign-up page
+    - All submissions enter review queue
+    
+    **Best for**:
+    - Building a user database
+    - Reducing spam
+    - Accountability and follow-up
+    - Community-driven directories
+    
+    **Example**: A directory where you want to know who submits what, with ability to contact submitters about their listings.
+  </Tab>
+  
+  <Tab title="Anyone">
+    **Open submissions** - No registration required
+    
+    **What happens**:
+    - Guests can submit without accounts
+    - Submissions still enter review queue (nothing auto-publishes)
+    - Lower barrier to entry
+    
+    **Best for**:
+    - Rapid growth
+    - Maximizing submissions
+    - Less friction for contributors
+    - Crowdsourced directories
+    
+    **Example**: A comprehensive directory where volume matters and you want to make it as easy as possible for people to contribute.
+  </Tab>
+</Tabs>
+
+### Visibility Settings
+
+<Card title="Listing Visibility Control" icon="eye">
+Beyond submission permissions, you can also control:
+
+- **Public visibility without account**: Submissions visible to everyone immediately (after approval)
+- **Account required to view**: Users must create accounts to view full listings beyond a preview limit
+
+This creates a **freemium model** where registration unlocks full directory access.
+</Card>
+
+<Tip>
+**Important**: Even when guests can submit, every listing enters the review queue first—nothing publishes without your approval!
+</Tip>
 
 ## Visitor Submission Flow
 
-When public submissions are allowed, visitors click the **Submit your listing** button (the label is fully customizable). They complete a comprehensive form with all the fields you currently enable. Required steps:
+When public submissions are enabled, the submission process is straightforward and user-friendly.
 
-1. Fill in the mandatory fields (listing name is always required).
-2. Provide optional details like pricing, coupons, or other custom information if enabled.
-3. Click **Submit listing**. The new listing enters the **Pending** state.
+### Submission Process
 
-## Control Built-In Fields
+<Steps>
+  <Step title="Click Submit Button">
+    Visitors click the "Submit your listing" button (label is fully customizable).
+  </Step>
+  
+  <Step title="Complete Form">
+    Fill in all enabled fields:
+    - **Required fields** (listing name is always required)
+    - Optional details like pricing, coupons, custom fields
+  </Step>
+  
+  <Step title="Submit Listing">
+    Click "Submit listing" button to send for review.
+  </Step>
+  
+  <Step title="Enters Pending State">
+    The new listing automatically enters **Pending** status awaiting your review.
+  </Step>
+</Steps>
 
-To adjust the default form:
+## Built-In Fields Control
 
-1. Go to **Edit Directory → Fields**.
-2. Review every built-in field grouped by tabs.
-3. Toggle each field to **Enabled/Disabled** or set it to **Optional/Required**.
+Customize which default fields appear in your listing submission form.
 
-You can tailor the form to match the data your directory needs while keeping the experience streamlined for submitters.
+### Accessing Field Settings
+
+<Steps>
+  <Step title="Go to Edit Directory">
+    From your dashboard, click "Edit Directory".
+  </Step>
+  
+  <Step title="Open Fields Tab">
+    Navigate to the **Fields** tab in the directory editor.
+  </Step>
+  
+  <Step title="Review Field Groups">
+    See all built-in fields organized by category/tab.
+  </Step>
+</Steps>
+
+### Field Configuration Options
+
+For each built-in field, you can:
+
+<CardGroup cols={2}>
+  <Card title="Enable/Disable" icon="toggle-on">
+    Turn fields on or off completely
+    
+    **Disabled fields**:
+    - Don't appear in submission form
+    - Won't be collected from users
+    - Hidden from listing pages
+  </Card>
+  
+  <Card title="Optional/Required" icon="asterisk">
+    Set whether field must be filled
+    
+    **Required fields**:
+    - Must be completed to submit
+    - Validated before submission
+    - Ensure you get critical data
+  </Card>
+</CardGroup>
+
+### Common Built-In Fields
+
+| Field | Typical Use | Directory Type |
+|-------|-------------|----------------|
+| **Logo** | Brand identity | Standard (products/SaaS) |
+| **Operating Hours** | Business schedules | Business (local/physical) |
+| **Business Phone** | Contact number | Business directories |
+| **Location Map** | Physical address | Local directories |
+| **Pricing** | Cost information | Product directories |
+| **Demo Link** | Try before buy | SaaS/software directories |
+| **Coupons** | Special offers | All types |
+
+<Tip>
+Tailor the form to match the data your directory needs while keeping the experience streamlined for submitters. Less is often more!
+</Tip>
 
 ## Review and Publish Submissions
 
-Inside the owner dashboard:
+Manage incoming submissions through your owner dashboard.
 
-* Find new submissions in the listings table with status **Pending**.
-* Choose one of three actions:
-  * **Reject**: Optionally send the submitter a message explaining the decision.
-  * **Approve**: Mark as reviewed but keep it hidden until a later date.
-  * **Publish**: Make it live immediately.
+### Finding Submissions
+
+Navigate to the listings table in your dashboard where new submissions appear with status **Pending**.
+
+### Reviewing Actions
+
+For each submission, you have three options:
+
+<Tabs>
+  <Tab title="Reject">
+    **Decline the submission**
+    
+    **Process**:
+    1. Review the listing content
+    2. Decide it doesn't meet criteria
+    3. Click "Reject"
+    4. Optionally send submitter a message explaining why
+    
+    **Best for**: Low-quality submissions, spam, off-topic listings, policy violations
+  </Tab>
+  
+  <Tab title="Approve">
+    **Accept but don't publish yet**
+    
+    **Process**:
+    1. Review and accept the content
+    2. Mark as "Approved" status
+    3. Listing remains hidden from public
+    4. Can be scheduled for later publishing
+    
+    **Best for**: Free tier listings with publishing delays, batching approvals
+  </Tab>
+  
+  <Tab title="Publish">
+    **Make it live immediately**
+    
+    **Process**:
+    1. Review and accept the content
+    2. Click "Publish"
+    3. Listing goes live instantly
+    4. Optionally email submitter with edit link
+    
+    **Best for**: Premium listings, immediate publication, owner-added listings
+  </Tab>
+</Tabs>
 
 ### Approved vs. Published
 
-* **Approved** means you have reviewed and accepted the content. You can schedule it to publish automatically after a set delay (for example, 60 days for free plans). Automation rules live in the **Automations** section.
-* **Published** listings are visible to the public right away.
+<Card title="Understanding the Difference" icon="circle-question">
+**Approved** means you've reviewed and accepted the content, but it's not visible yet. You can:
+- Schedule automatic publishing after a set delay (e.g., 60 days for free plans)
+- Publish manually when ready
+- Use automation rules (see Automation guide)
 
-When you publish, you can email the submitter with a temporary edit link. If they make changes, the listing returns to the Pending state so you can re-review it.
+**Published** listings are visible to the public immediately and appear in all search results and filters.
+</Card>
 
-## Member-Only Submissions
+<Warning>
+When you publish a listing, you can send the submitter an email with a temporary edit link. If they make changes, the listing returns to **Pending** status for you to re-review.
+</Warning>
 
-When submissions are limited to members:
+## Custom Fields
 
-* The public submission button redirects to the sign-up page.
-* Users create an account (or sign in) before accessing the form.
+Custom fields capture information beyond built-in listing attributes, allowing you to create highly specialized directories.
 
-This is ideal when you want tighter control while still enabling community contributions.
+### When to Use Custom Fields
 
-## Owner-Only Submissions
+<AccordionGroup>
+  <Accordion title="Industry-Specific Data" icon="industry">
+    Capture data unique to your niche
+    
+    **Restaurant example**: Cuisine type, price range, seating capacity, reservation system
+    
+    **Real estate example**: Square footage, bedrooms, year built, lot size
+  </Accordion>
+  
+  <Accordion title="Extended Attributes" icon="puzzle-piece">
+    Add fields that don't fit standard categories
+    
+    **Examples**: Certification status, awards won, establishment year, team size
+  </Accordion>
+  
+  <Accordion title="Filtering Criteria" icon="filter">
+    Create fields specifically for filtering
+    
+    **Examples**: Price range, delivery available, parking options, accessibility features
+  </Accordion>
+  
+  <Accordion title="Special Features" icon="star">
+    Highlight unique offerings or characteristics
+    
+    **Examples**: WiFi available, pet-friendly, outdoor seating, live music
+  </Accordion>
+</AccordionGroup>
 
-Switching to owner-only mode hides the submission button entirely, and visitors cannot access the sign-up screen. Use this when you prefer to curate listings manually.
+## Creating Custom Fields
 
-## Custom Fields Overview
+Custom fields are organized into sections for better form structure and organization.
 
-Custom fields capture information beyond the built-in listing attributes. For a restaurant directory, examples include cuisine type, price range, seating capacity, or reservation links. You can organize them into sections (e.g., **Dining Details**, **Amenities**) to keep forms and filters tidy.
+### Accessing Custom Fields
 
-### Access Custom Fields
+<Steps>
+  <Step title="Open Customization">
+    From dashboard sidebar, click **Customization → Custom Fields**.
+  </Step>
+  
+  <Step title="View Interface">
+    See existing sections and fields with drag-and-drop reordering.
+  </Step>
+  
+  <Step title="Use Action Buttons">
+    Access **Add Section** and **Add Field** buttons at the top.
+  </Step>
+</Steps>
 
-1. Open **Customization → Custom Fields** from the sidebar.
-2. The interface shows:
-   * **Add Section** and **Add Field** buttons at the top.
-   * A drag-and-drop area to reorder sections and fields.
+### Creating a Section
 
-Existing sections (such as `dining_details`) may already contain required fields—reorder or edit them as needed.
+Sections group related custom fields together (e.g., "Dining Details", "Property Features", "Technical Specifications").
 
-### Create a New Section
+<Steps>
+  <Step title="Click Add Section">
+    Open the section creation dialog.
+  </Step>
+  
+  <Step title="Set Section ID">
+    Enter a unique identifier (e.g., `dining_details`, `property_info`).
+    
+    **Format**: Lowercase, underscores for spaces, no special characters
+  </Step>
+  
+  <Step title="Add Description (Optional)">
+    Brief explanation of what this section contains.
+  </Step>
+  
+  <Step title="Configure Visibility">
+    Toggle settings:
+    - **Active**: Section appears in forms
+    - **Show in Filters**: Include in sidebar filtering
+    - **Expand by Default**: Auto-expand in filter sidebar
+  </Step>
+  
+  <Step title="Create Section">
+    Click "Create Section" to save.
+  </Step>
+</Steps>
 
-1. Click **Add Section**.
-2. Set the **Section ID** (e.g., `dining_details`) and optional description.
-3. Enable **Active** so it appears in forms.
-4. Toggle **Show in Filters** to expose the section in sidebar filters.
-5. Optionally expand the section by default in filters.
-6. Click **Create Section**.
+### Adding a Custom Field
 
-### Add a Custom Field
+<Steps>
+  <Step title="Click Add Field">
+    Open the field creation dialog.
+  </Step>
+  
+  <Step title="Set Internal Name">
+    Enter field name for database (e.g., `cuisine_type`, `square_footage`).
+    
+    **Format**: Lowercase, underscores, no spaces
+  </Step>
+  
+  <Step title="Set Display Label">
+    The label users see (e.g., "Cuisine Type", "Square Footage").
+  </Step>
+  
+  <Step title="Choose Field Type">
+    Select the appropriate input type for your data.
+  </Step>
+  
+  <Step title="Assign to Section">
+    Choose which section this field belongs to.
+  </Step>
+  
+  <Step title="Configure Options">
+    Set placeholder text, default value, and other field-specific options.
+  </Step>
+  
+  <Step title="Set Visibility Options">
+    Control where and how the field appears.
+  </Step>
+  
+  <Step title="Create Field">
+    Click "Create Field" to save.
+  </Step>
+</Steps>
 
-1. Click **Add Field**.
-2. Enter an internal name (e.g., `cuisine_type`) and a display label (e.g., "Cuisine Type").
-3. Choose a field type (text, number, email, URL, date, textarea, checkbox, list, etc.).
-4. Assign it to the section you created.
-5. Set placeholder text and default value if needed.
-6. Configure visibility:
-   * **Active**: show the field on forms.
-   * **Required**: force users to provide a value.
-   * **Show on listing page** and **Show label** for front-end display.
-   * **Show on cards** for search results (use sparingly for key info).
-   * **Show in filters** to let visitors filter by this field.
-7. Click **Create Field**.
+### Field Types
 
-You can edit fields later, adjust labels, change where they appear, or drag them between sections.
+<Tabs>
+  <Tab title="Text">
+    Single-line text input
+    
+    **Use for**: Names, titles, short answers
+    **Example**: Restaurant name, contact person
+  </Tab>
+  
+  <Tab title="Textarea">
+    Multi-line text input
+    
+    **Use for**: Long descriptions, notes, detailed information
+    **Example**: Special instructions, amenities description
+  </Tab>
+  
+  <Tab title="Number">
+    Numeric input only
+    
+    **Use for**: Quantities, measurements, counts
+    **Example**: Seating capacity, square footage, employee count
+  </Tab>
+  
+  <Tab title="Email">
+    Email address with validation
+    
+    **Use for**: Contact emails
+    **Example**: Reservations email, booking contact
+  </Tab>
+  
+  <Tab title="URL">
+    Website link with validation
+    
+    **Use for**: External links
+    **Example**: Reservation system, booking portal, menu URL
+  </Tab>
+  
+  <Tab title="Date">
+    Date picker
+    
+    **Use for**: Dates and deadlines
+    **Example**: Established date, event dates, opening date
+  </Tab>
+  
+  <Tab title="Checkbox">
+    Yes/no or true/false
+    
+    **Use for**: Binary options
+    **Example**: Parking available, WiFi included, pet-friendly
+  </Tab>
+  
+  <Tab title="Select/Dropdown">
+    Choose one option from list
+    
+    **Use for**: Predefined choices
+    **Example**: Cuisine type, price range, category
+  </Tab>
+  
+  <Tab title="Multi-Select">
+    Choose multiple options from list
+    
+    **Use for**: Multiple selections
+    **Example**: Amenities, features, dietary options
+  </Tab>
+</Tabs>
 
-## Use Custom Fields in Listings
+### Visibility Options
 
-When a user submits a listing:
+Fine-tune where custom fields appear:
 
-1. They see custom sections and fields organized exactly as you configured them.
-2. They complete the relevant information (e.g., cuisine, price range, outdoor seating).
-3. After submission, filters in the directory sidebar include every field marked as filterable.
-4. Listing detail pages display the same structured data, giving visitors a rich overview.
+<AccordionGroup>
+  <Accordion title="Active" icon="toggle-on">
+    Enable to show the field on submission forms.
+    
+    **Disabled fields** don't appear anywhere but remain in the system.
+  </Accordion>
+  
+  <Accordion title="Required" icon="asterisk">
+    Force users to provide a value before submitting.
+    
+    **Use sparingly** - only for truly essential data.
+  </Accordion>
+  
+  <Accordion title="Show on Listing Page" icon="file">
+    Display the field value on public listing pages.
+    
+    **Example**: Show "Cuisine: Italian" on restaurant listing
+  </Accordion>
+  
+  <Accordion title="Show Label" icon="tag">
+    Display the field label alongside the value.
+    
+    **With label**: "Seating Capacity: 50"
+    **Without label**: "50"
+  </Accordion>
+  
+  <Accordion title="Show on Cards" icon="square">
+    Display in listing cards on search/browse pages.
+    
+    **Use sparingly** - only show key information to avoid clutter.
+    **Example**: Price, rating, key feature
+  </Accordion>
+  
+  <Accordion title="Show in Filters" icon="filter">
+    Include in sidebar filtering so users can filter by this field.
+    
+    **Best for**: Fields with limited options (checkboxes, selects) rather than free text.
+  </Accordion>
+</AccordionGroup>
 
-Custom fields, combined with the submission controls above, allow you to design a tailored intake process and keep your directory fresh with high-quality, well-structured listings.
+<Tip>
+You can edit fields later to adjust labels, change visibility, or move them between sections using drag-and-drop.
+</Tip>
+
+## Using Custom Fields
+
+Once created, custom fields integrate seamlessly into your listing workflow.
+
+### Member Submission Experience
+
+<Steps>
+  <Step title="See Custom Sections">
+    Custom sections and fields appear organized in the submission form exactly as configured.
+  </Step>
+  
+  <Step title="Complete Information">
+    Users fill in custom fields (e.g., cuisine type, price range, outdoor seating).
+  </Step>
+  
+  <Step title="Submit Listing">
+    Custom field data is included with the submission.
+  </Step>
+  
+  <Step title="Appears in Filters">
+    After approval, filterable fields appear in directory sidebar.
+  </Step>
+  
+  <Step title="Displays on Listing">
+    Field values show on listing detail pages as configured.
+  </Step>
+</Steps>
+
+### CSV Import with Custom Fields
+
+Custom fields work with CSV imports:
+
+<Card title="CSV Column Format" icon="file-csv">
+Custom fields appear in CSV templates and imports as: `custom_<fieldName>`
+
+**Examples**:
+- Field name: `cuisine_type` → CSV column: `custom_cuisine_type`
+- Field name: `square_footage` → CSV column: `custom_square_footage`
+
+When importing, these columns are automatically mapped to your custom fields.
+</Card>
+
+## Practical Examples
+
+### Restaurant Directory Custom Fields
+
+```plaintext
+Section: Dining Details (dining_details)
+
+Fields:
+- cuisine_type (Select): Italian, Mexican, Japanese, American, etc.
+- price_range (Select): $, $$, $$$, $$$$
+- seating_capacity (Number): 10-200
+- reservations_link (URL): Link to reservation system
+- outdoor_seating (Checkbox): Yes/No
+- dietary_options (Multi-select): Vegetarian, Vegan, Gluten-Free, etc.
+
+Visibility:
+- Show in filters: cuisine_type, price_range, dietary_options
+- Show on cards: cuisine_type, price_range
+- Show on listing page: All fields
+```
+
+### Real Estate Directory Custom Fields
+
+```plaintext
+Section: Property Details (property_details)
+
+Fields:
+- property_type (Select): House, Apartment, Condo, Townhouse
+- bedrooms (Number): 1-10
+- bathrooms (Number): 1-10
+- square_footage (Number): In square feet
+- year_built (Number): 1800-2024
+- lot_size (Number): In acres
+- parking_spaces (Number): 0-10
+- pool (Checkbox): Yes/No
+- hoa_fee (Number): Monthly HOA fee
+
+Visibility:
+- Show in filters: property_type, bedrooms, bathrooms, price range
+- Show on cards: bedrooms, bathrooms, square_footage
+- Show on listing page: All fields
+```
+
+### SaaS Directory Custom Fields
+
+```plaintext
+Section: Product Information (product_info)
+
+Fields:
+- target_users (Select): Individuals, Small Business, Enterprise
+- deployment (Multi-select): Cloud, On-premise, Mobile App
+- integration_options (Textarea): List of integrations
+- free_trial_available (Checkbox): Yes/No
+- trial_duration (Number): Days
+- support_channels (Multi-select): Email, Chat, Phone, Documentation
+- company_size (Select): 1-10, 11-50, 51-200, 201+
+- founded_year (Number): Year company was founded
+
+Visibility:
+- Show in filters: target_users, deployment, free_trial_available
+- Show on cards: target_users, free_trial_available
+- Show on listing page: All fields
+```
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Start Simple" icon="minimize">
+    Begin with essential fields only. Add more as you understand your users' needs.
+  </Card>
+  
+  <Card title="Use Clear Labels" icon="text">
+    Make field labels immediately understandable. Avoid jargon or ambiguous terms.
+  </Card>
+  
+  <Card title="Group Related Fields" icon="object-group">
+    Organize fields into logical sections to keep forms manageable.
+  </Card>
+  
+  <Card title="Limit Required Fields" icon="asterisk">
+    Only require fields that are absolutely essential. More requirements = fewer submissions.
+  </Card>
+  
+  <Card title="Test the Form" icon="vial">
+    Submit test listings yourself to ensure the form flow makes sense.
+  </Card>
+  
+  <Card title="Optimize Filters" icon="filter">
+    Only make fields filterable if they have limited options. Text fields don't filter well.
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Custom field not appearing in form" icon="eye-slash">
+    **Check**:
+    - Field is marked as "Active"
+    - Section is marked as "Active"
+    - Field is properly assigned to a section
+    - Directory settings allow the field
+  </Accordion>
+  
+  <Accordion title="Field not showing in filters" icon="filter-circle-xmark">
+    **Solution**:
+    - Enable "Show in Filters" for the field
+    - Enable "Show in Filters" for the section
+    - Ensure field type is suitable for filtering (select, checkbox, number)
+    - Free text fields don't work well as filters
+  </Accordion>
+  
+  <Accordion title="CSV import not recognizing custom field" icon="file-excel">
+    **Solution**:
+    - Use correct column name format: `custom_<fieldName>`
+    - Ensure field name matches exactly (case-sensitive)
+    - Export a sample listing to see correct format
+    - Create the custom field before importing
+  </Accordion>
+  
+  <Accordion title="Too many submissions (spam)" icon="ban">
+    **Solutions**:
+    - Switch to "Owner + Members" mode to require registration
+    - Use manual approval for all submissions
+    - Consider adding reCAPTCHA if available
+    - Review and reject spam quickly to discourage spammers
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Managing Listings" icon="list-check" href="/pages/managing-listings">
+    Learn how to review, approve, and manage submissions
+  </Card>
+  
+  <Card title="Automation" icon="wand-magic-sparkles" href="/pages/automation">
+    Set up automated publishing delays and featured listings
+  </Card>
+  
+  <Card title="Members Dashboard" icon="users" href="/pages/members-dashboard">
+    Understand the member submission experience
+  </Card>
+  
+  <Card title="Miscellaneous Settings" icon="sliders" href="/pages/miscellaneous-settings">
+    Configure additional listing and verification settings
+  </Card>
+</CardGroup>
+
+---
+
+Custom fields, combined with flexible submission controls, let you design a tailored intake process and keep your directory fresh with high-quality, well-structured listings.
