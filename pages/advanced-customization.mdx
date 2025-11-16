@@ -1,0 +1,515 @@
+---
+title: "Advanced Customization"
+description: "Add custom sections, scripts, and customize language for your directory"
+---
+
+## Overview
+
+Advanced Customization gives you powerful tools to tailor your directory beyond the standard design options. You can add custom content sections, integrate third-party tools with custom code, and adapt the terminology to match your specific niche.
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/o9LJRbT39rw"
+  title="DirectoryEasy Advanced Customization"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+## Custom Sections
+
+Custom sections let you add text, images, links, or call-to-action elements exactly where you want them on your directory pages.
+
+### Creating a Custom Section
+
+<Steps>
+  <Step title="Open the Add New Section Panel">
+    Navigate to the custom sections area in your directory settings.
+  </Step>
+  
+  <Step title="Enter Section Title">
+    Give your section a descriptive title that represents its content.
+  </Step>
+  
+  <Step title="Choose Section Type">
+    Select from available section types based on your content needs.
+  </Step>
+  
+  <Step title="Select Display Location">
+    Choose where the section appears on your page.
+  </Step>
+  
+  <Step title="Configure Layout">
+    Pick the layout that best presents your content.
+  </Step>
+  
+  <Step title="Add Content">
+    Fill in your text, images, buttons, and links.
+  </Step>
+  
+  <Step title="Activate & Create">
+    Enable the section and click Create to add it to your directory.
+  </Step>
+</Steps>
+
+### Section Types
+
+<Tabs>
+  <Tab title="Image + Text + Button">
+    A complete section combining visual content with descriptive text and a call-to-action button.
+    
+    **Perfect for**: Feature highlights, promotional content, service descriptions
+  </Tab>
+  
+  <Tab title="Text Only">
+    Simple text-based section for announcements or information.
+    
+    **Perfect for**: Notices, policy updates, general information
+  </Tab>
+  
+  <Tab title="Image + Text">
+    Visual content paired with descriptive text, without a button.
+    
+    **Perfect for**: About sections, feature descriptions, informational content
+  </Tab>
+</Tabs>
+
+### Display Locations
+
+Control where your custom section appears on the page:
+
+| Location | Description | Use Case |
+|----------|-------------|----------|
+| **Above Footer** | Near the top of the page | High-visibility content, CTAs |
+| **In Footer** | Within the footer area | Contact info, social links |
+| **Below Hero** | Right after the hero section | Important announcements |
+| **Between Content** | Middle of the page | Breaking up long content |
+
+### Layout Options
+
+Choose how your content is arranged:
+
+<CardGroup cols={2}>
+  <Card title="Image Left" icon="arrow-left">
+    Image on the left side with text and button on the right.
+  </Card>
+  
+  <Card title="Image Right" icon="arrow-right">
+    Text and button on the left with image on the right.
+  </Card>
+  
+  <Card title="Image Top" icon="arrow-up">
+    Image at the top with text and button below.
+  </Card>
+  
+  <Card title="Image Center" icon="circle-dot">
+    Centered image with content arranged symmetrically.
+  </Card>
+</CardGroup>
+
+### Content Configuration
+
+#### Text Content
+
+Write any text you want inside the content field. This is your main message to visitors.
+
+<Tip>
+Keep your text concise and focused on a single message or call-to-action for maximum impact.
+</Tip>
+
+#### Image Settings
+
+- **Image URL**: Enter the full URL to your image
+  ```
+  Example: https://example.com/image.jpg
+  ```
+- **Alt Text**: Describe the image for accessibility and SEO
+  ```
+  Example: "Customer using our directory platform on laptop"
+  ```
+
+<Warning>
+Always include alt text for images to ensure your directory is accessible to all users and optimized for search engines.
+</Warning>
+
+#### Button Configuration
+
+- **Button Text**: The text that appears on the button
+  ```
+  Examples: "Get Started", "Learn More", "Sign Up Today"
+  ```
+- **Button Link**: Where clicking the button takes users
+  ```
+  Example: https://example.com/signup
+  ```
+
+#### Alignment Controls
+
+Fine-tune the visual presentation:
+
+- **Container Alignment**: Controls the overall section positioning
+- **Title Alignment**: Adjusts where the title appears (left, center, right)
+- **Text Alignment**: Sets how the body text is aligned
+
+### Preview Your Section
+
+<Check>
+After creating your custom section, switch to the **Preview** tab to see exactly how it looks before making it live.
+</Check>
+
+### Practical Example
+
+Here's a complete example of creating a promotional section:
+
+```plaintext
+Title: "Join Our Premium Directory"
+Type: Image + Text + Button
+Location: Above Footer
+Layout: Image Left
+
+Content:
+"Get featured placement and reach thousands of potential customers. 
+Upgrade to Premium today and grow your business."
+
+Image URL: https://yourdomain.com/premium-badge.jpg
+Alt Text: "Premium membership badge"
+
+Button Text: "Get Started"
+Button Link: https://yourdomain.com/upgrade
+
+Container Alignment: Center
+Title Alignment: Left
+Text Alignment: Left
+```
+
+## Custom Codes
+
+The Custom Codes section lets you add JavaScript to your directory for extra functionality, such as analytics, chat widgets, or custom tools.
+
+### Script Positions
+
+<Tabs>
+  <Tab title="Head">
+    **Loads before page content**
+    
+    Ideal for:
+    - Google Analytics
+    - Facebook Pixel
+    - Meta tags
+    - Tracking codes
+    - Font loaders
+    
+    ```html
+    <!-- Example: Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    ```
+  </Tab>
+  
+  <Tab title="Body">
+    **Loads after page content**
+    
+    Perfect for:
+    - Chat widgets (Intercom, Crisp, etc.)
+    - Interactive features
+    - Social media widgets
+    - Embedded content
+    - Performance-sensitive scripts
+    
+    ```html
+    <!-- Example: Chat Widget -->
+    <script>
+      window.intercomSettings = {
+        app_id: "YOUR_APP_ID"
+      };
+      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/YOUR_APP_ID';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+    ```
+  </Tab>
+</Tabs>
+
+### Script Types
+
+You can add both external and inline scripts:
+
+<AccordionGroup>
+  <Accordion title="External Scripts" icon="link">
+    Load scripts from any domain, including your own.
+    
+    ```html
+    <script src="https://example.com/your-script.js"></script>
+    ```
+  </Accordion>
+  
+  <Accordion title="Inline Scripts" icon="code">
+    Write JavaScript directly in the custom code field.
+    
+    ```html
+    <script>
+      console.log('Custom functionality loaded');
+      // Your custom code here
+    </script>
+    ```
+  </Accordion>
+</AccordionGroup>
+
+### Security
+
+<Info>
+You can add scripts from any domain. Only clearly harmful scripts are blocked to protect your directory and visitors.
+</Info>
+
+### Common Use Cases
+
+<CardGroup cols={2}>
+  <Card title="Analytics Tracking" icon="chart-line">
+    Google Analytics, Plausible, Mixpanel, or other analytics platforms
+  </Card>
+  
+  <Card title="Live Chat" icon="message">
+    Intercom, Crisp, Tawk.to, or other customer support tools
+  </Card>
+  
+  <Card title="Marketing Tools" icon="bullhorn">
+    Facebook Pixel, LinkedIn Insight Tag, Google Ads conversion tracking
+  </Card>
+  
+  <Card title="Custom Features" icon="wand-sparkles">
+    Custom interactions, animations, or functionality specific to your needs
+  </Card>
+</CardGroup>
+
+### Adding Custom Code
+
+<Steps>
+  <Step title="Choose Position">
+    Select whether to add your code in the Head or Body section.
+  </Step>
+  
+  <Step title="Paste Your Code">
+    Copy and paste your script code into the text field.
+  </Step>
+  
+  <Step title="Test Thoroughly">
+    After adding, test your directory to ensure the script works correctly.
+  </Step>
+  
+  <Step title="Save Changes">
+    Click **Add Custom Code** to save your script.
+  </Step>
+</Steps>
+
+<Warning>
+Always test custom code thoroughly before deploying to a live directory. Faulty scripts can affect performance or break functionality.
+</Warning>
+
+## Language and Terminology
+
+Customize your directory's language and field names to match your specific niche. This is especially helpful when your directory isn't focused on traditional businesses.
+
+### Why Customize Terminology?
+
+Different directory types need different terminology:
+
+| Directory Type | Default Term | Custom Term |
+|---------------|--------------|-------------|
+| Real Estate | "Business Information" | "Property Details" |
+| Properties | "Listing" | "Property" |
+| Restaurants | "Operating Hours" | "Service Times" |
+| Services | "Business Name" | "Service Provider" |
+| Events | "Location" | "Venue" |
+
+### Customizable Fields
+
+You can update the following labels to match your niche:
+
+<AccordionGroup>
+  <Accordion title="Main Section Title" icon="heading">
+    Change "Business Information" to match your content type.
+    
+    **Examples**: 
+    - House Information
+    - Property Details
+    - Service Overview
+    - Event Information
+  </Accordion>
+  
+  <Accordion title="Tab Name" icon="folder">
+    Customize the tab label that appears in the navigation.
+    
+    **Examples**: 
+    - Property Tab
+    - Service Details
+    - Venue Info
+  </Accordion>
+  
+  <Accordion title="Tab Description" icon="text">
+    Update the description text that appears below the tab name.
+  </Accordion>
+  
+  <Accordion title="Phone Label" icon="phone">
+    Rename the phone number field.
+    
+    **Examples**: 
+    - Contact Number
+    - Booking Phone
+    - Reservation Line
+  </Accordion>
+  
+  <Accordion title="Email Label" icon="envelope">
+    Customize the email field label.
+    
+    **Examples**: 
+    - Contact Email
+    - Inquiries
+    - Booking Email
+  </Accordion>
+  
+  <Accordion title="Operating Hours Label" icon="clock">
+    Change how hours are described.
+    
+    **Examples**: 
+    - Visiting Hours
+    - Open Hours
+    - Available Times
+    - Service Schedule
+  </Accordion>
+  
+  <Accordion title="Location Map Label" icon="map">
+    Rename the map section.
+    
+    **Examples**: 
+    - Property Location
+    - Find Us Here
+    - Venue Address
+  </Accordion>
+</AccordionGroup>
+
+### Configuration Tips
+
+<Tip>
+You can leave any field empty if you prefer to keep the default wording. Only customize what makes sense for your specific use case.
+</Tip>
+
+### Practical Examples
+
+#### Real Estate Directory
+
+```plaintext
+Business Information → Property Details
+Listing → Property
+Phone → Agent Contact
+Operating Hours → Viewing Hours
+Location Map → Property Location
+```
+
+#### Restaurant Directory
+
+```plaintext
+Business Information → Restaurant Details
+Listing → Restaurant
+Operating Hours → Dining Hours
+Phone → Reservation Line
+Location Map → Find This Restaurant
+```
+
+#### Service Provider Directory
+
+```plaintext
+Business Information → Provider Information
+Listing → Service
+Operating Hours → Available Hours
+Phone → Contact Number
+Email → Booking Email
+```
+
+#### Event Venue Directory
+
+```plaintext
+Business Information → Venue Details
+Listing → Venue
+Operating Hours → Event Hours
+Location Map → Venue Location
+Phone → Booking Line
+```
+
+### Future Enhancements
+
+<Info>
+More customization options will be added in the future based on customer requests. If you need specific terminology changes, reach out to support with your suggestions.
+</Info>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Test Everything" icon="flask">
+    Always preview custom sections and test custom code before going live
+  </Card>
+  
+  <Card title="Stay Consistent" icon="check-double">
+    Use terminology consistently across all customized fields
+  </Card>
+  
+  <Card title="Consider Your Audience" icon="users">
+    Choose terms that your target users will understand immediately
+  </Card>
+  
+  <Card title="Keep It Simple" icon="minimize">
+    Don't over-customize - clarity is more important than creativity
+  </Card>
+</CardGroup>
+
+## Quick Reference
+
+### Custom Sections Checklist
+
+- [ ] Section title defined
+- [ ] Section type selected
+- [ ] Display location chosen
+- [ ] Layout configured
+- [ ] Content written
+- [ ] Image URL added with alt text
+- [ ] Button text and link configured
+- [ ] Alignment settings adjusted
+- [ ] Section activated
+- [ ] Preview checked
+
+### Custom Code Checklist
+
+- [ ] Script position determined (Head or Body)
+- [ ] Code copied from source
+- [ ] Script tested in development
+- [ ] Code added to directory
+- [ ] Functionality verified on live site
+- [ ] Performance impact checked
+
+### Language Customization Checklist
+
+- [ ] Directory type identified
+- [ ] Terminology mapped from defaults
+- [ ] All relevant fields updated
+- [ ] Consistency verified across directory
+- [ ] User testing completed
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Design Customization" icon="palette" href="/pages/design-customization">
+    Customize your directory's visual appearance
+  </Card>
+  
+  <Card title="Tags & Monetization" icon="tags" href="/pages/tags-and-monetization">
+    Set up pricing and subscription plans
+  </Card>
+</CardGroup>
+
+---
+
+With these advanced customization features, you can adapt DirectoryEasy to perfectly match your niche, brand, and business needs.
+

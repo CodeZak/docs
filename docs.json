@@ -18,6 +18,7 @@
             "pages": [
               "pages/creating-directory",
               "pages/design-customization",
+              "pages/advanced-customization",
               "pages/configuring-directory-email",
               "pages/members-dashboard",
               "pages/adding-listings",
