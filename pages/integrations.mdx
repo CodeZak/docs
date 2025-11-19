@@ -1,0 +1,497 @@
+---
+title: "Integrations"
+description: "Connect AI services, webhooks, Google Sheets, and media storage to extend your directory"
+---
+
+## Overview
+
+DirectoryEasy provides powerful integrations to enhance your directory with AI-powered content, automatic screenshots, real-time webhooks, data synchronization, and custom media storage.
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/4XwpdLK-v1Q"
+  title="DirectoryEasy Integrations"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+---
+
+## AI Assistant Hub
+
+The AI Assistant Hub lets you enhance your directory with AI-powered content generation. You can configure providers, select models, and manage your AI credits.
+
+### Free Trial Credits
+
+Your free trial shows remaining AI generations—for example, **8 credits left**—which use premium API keys without setup.
+
+### Configure AI Providers
+
+You can connect multiple providers and set a default:
+
+<Tabs>
+  <Tab title="OpenAI">
+    **GPT models** like GPT-4o for versatile content generation
+    
+    Use OpenAI's powerful language models for generating listing descriptions and content.
+  </Tab>
+  
+  <Tab title="Anthropic">
+    **Claude models** for reasoning and creative tasks
+    
+    Leverage Anthropic's Claude for high-quality, nuanced content generation.
+  </Tab>
+  
+  <Tab title="Google">
+    **Gemini models** for multimodal AI with large context support
+    
+    Use Google's Gemini for advanced AI capabilities with extensive context understanding.
+  </Tab>
+</Tabs>
+
+### Setting Up AI Providers
+
+<Steps>
+  <Step title="Select Provider">
+    Choose from OpenAI, Anthropic, or Google.
+  </Step>
+  
+  <Step title="Enter API Key">
+    Enter your API key for the selected provider.
+    
+    **Security**: Your API key is stored securely.
+  </Step>
+  
+  <Step title="Choose Default Model">
+    Select the default model that fits your content needs.
+  </Step>
+  
+  <Step title="Save Configuration">
+    Click **Save Configuration** to enable AI content generation across your directory.
+  </Step>
+</Steps>
+
+<Info>
+Once configured, AI content generation will be available throughout your directory for automatic description writing and content creation.
+</Info>
+
+---
+
+## Screenshot One Integration
+
+The Screenshot One Integration lets your directory automatically capture high-quality screenshots of websites when users add new listings.
+
+### Current Status
+
+Currently, the feature is **inactive** until you configure your Screenshot One API keys.
+
+<Card title="Optional Feature" icon="camera">
+This optional feature enhances the user experience by providing professional screenshots for listings.
+
+Your directory will function normally without this feature, but enabling it adds a polished, professional look to your listings.
+</Card>
+
+### Configuration
+
+<Steps>
+  <Step title="Enter Access Key">
+    Enter your Screenshot One Access Key.
+  </Step>
+  
+  <Step title="Enter Secret Key">
+    Enter your Screenshot One Secret Key.
+  </Step>
+  
+  <Step title="Enable Screenshot Capture">
+    Toggle **Enable Screenshot Capture**.
+  </Step>
+  
+  <Step title="Save Configuration">
+    Click **Save Configuration** to apply the settings.
+  </Step>
+</Steps>
+
+<Check>
+Once configured, screenshots are captured automatically for listings with websites.
+</Check>
+
+---
+
+## Webhooks
+
+The Webhooks section lets you receive real-time notifications when events happen in your directory.
+
+### Creating a Webhook
+
+<Steps>
+  <Step title="Click Create Webhook">
+    Start creating a new webhook integration.
+  </Step>
+  
+  <Step title="Fill in Details">
+    Enter the webhook configuration details.
+  </Step>
+  
+  <Step title="Select Events">
+    Choose which events you want to receive notifications for.
+  </Step>
+  
+  <Step title="Configure Security">
+    Set up webhook secret and advanced settings.
+  </Step>
+  
+  <Step title="Create Webhook">
+    Click **Create Webhook** to start receiving real-time notifications.
+  </Step>
+</Steps>
+
+### Webhook Configuration
+
+<AccordionGroup>
+  <Accordion title="Name" icon="heading">
+    A descriptive name for your webhook.
+    
+    This helps you identify different webhooks in your dashboard.
+  </Accordion>
+  
+  <Accordion title="Endpoint URL" icon="link">
+    Where the webhook requests will be sent.
+    
+    **Requirements**: Must be a valid HTTPS URL that can receive POST requests.
+  </Accordion>
+  
+  <Accordion title="Description (Optional)" icon="text">
+    Additional context about this webhook.
+    
+    Use this to document the purpose or integration details.
+  </Accordion>
+  
+  <Accordion title="Events" icon="bell">
+    Select the events you want to receive notifications for:
+    
+    **Listing Events**:
+    - `listing.created` - When a new listing is created
+    - `listing.published` - When a listing is published
+    
+    **User Events**:
+    - `user.signup` - When a new user signs up
+    
+    **Payment Events**:
+    - `payment.succeeded` - When a payment is successful
+  </Accordion>
+  
+  <Accordion title="Webhook Secret" icon="key">
+    Set a Webhook Secret to verify requests from DirectoryEasy.
+    
+    This secret is used to generate signatures for authentication.
+  </Accordion>
+  
+  <Accordion title="Advanced Settings (Optional)" icon="gear">
+    Configure additional webhook behavior:
+    
+    - **Timeout**: How long to wait for a response
+    - **Retry Attempts**: Number of retry attempts on failure
+    - **Retry Delay**: Delay between retry attempts
+  </Accordion>
+</AccordionGroup>
+
+### How Webhooks Work
+
+<Card title="Event Notifications" icon="bell-on">
+When an event occurs, DirectoryEasy sends a POST request to your endpoint with:
+
+**JSON Payload**: Contains event details and data
+
+**Request Signature**: Each request includes a signature (`X-DirectoryEasy-Signature`) to verify authenticity
+
+You can use this signature to confirm the request came from DirectoryEasy.
+</Card>
+
+### Best Practices
+
+<AccordionGroup>
+  <Accordion title="Verify the Signature" icon="shield-check">
+    Verify the signature of incoming requests using your webhook secret.
+    
+    This ensures the request is legitimate and from DirectoryEasy.
+  </Accordion>
+  
+  <Accordion title="Implement Idempotency" icon="copy">
+    Implement idempotency to handle duplicates.
+    
+    Process each webhook event only once, even if received multiple times.
+  </Accordion>
+  
+  <Accordion title="Respond Quickly" icon="bolt">
+    Respond quickly (within 5 seconds).
+    
+    Return a 200 OK response as soon as possible to acknowledge receipt.
+  </Accordion>
+  
+  <Accordion title="Use HTTPS" icon="lock">
+    Use HTTPS for your endpoint.
+    
+    Secure endpoints protect your data and are required for webhooks.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Google Sheets Integration (Beta)
+
+The Google Sheets Integration (Beta) lets you sync your directory listings with Google Sheets for easy data management.
+
+### Connection Status
+
+Once connected, you can see:
+
+<CardGroup cols={2}>
+  <Card title="Google Account" icon="google">
+    The connected Google account
+  </Card>
+  
+  <Card title="Status" icon="signal">
+    Connection status (active/inactive)
+  </Card>
+  
+  <Card title="Last Sync" icon="clock">
+    When data was last synchronized
+  </Card>
+  
+  <Card title="Auto Sync" icon="rotate">
+    Whether automatic sync is enabled
+  </Card>
+</CardGroup>
+
+<Tip>
+You can also open the connected spreadsheet directly from the interface.
+</Tip>
+
+### Manual Sync
+
+Use Manual Sync to update data on demand:
+
+<Tabs>
+  <Tab title="Push to Google Sheets">
+    Send your directory listings to Google Sheets.
+    
+    Updates the spreadsheet with current listing data from your directory.
+  </Tab>
+  
+  <Tab title="Pull from Google Sheets">
+    Import listings from Google Sheets to your directory.
+    
+    Updates your directory with data from the spreadsheet.
+  </Tab>
+</Tabs>
+
+### Sync Settings
+
+Configure how data synchronization works:
+
+<AccordionGroup>
+  <Accordion title="Sync Direction" icon="arrows-left-right">
+    Configure the sync direction:
+    
+    **One-way**: Data flows in only one direction (Push only or Pull only)
+    
+    **Two-way**: Data syncs in both directions automatically
+  </Accordion>
+  
+  <Accordion title="Auto Sync" icon="clock-rotate-left">
+    Set Auto Sync to update data automatically every **2 hours**.
+    
+    When enabled, your directory and spreadsheet stay in sync without manual intervention.
+  </Accordion>
+</AccordionGroup>
+
+### Danger Zone
+
+<Warning>
+**Disconnect Google Sheets**
+
+The Danger Zone allows you to disconnect Google Sheets integration.
+
+**Important**: This action is irreversible. Once disconnected, you'll need to reconnect and reconfigure the integration.
+</Warning>
+
+---
+
+## Media Upload Integration
+
+Configure your media upload service for images and files in your directory.
+
+### Upload Service Options
+
+<Tabs>
+  <Tab title="Default Service">
+    Use DirectoryEasy's default upload service.
+    
+    **Features**:
+    - No configuration required
+    - Works perfectly out of the box
+    - Managed by DirectoryEasy
+    
+    The default service works perfectly even if you choose not to set anything up.
+  </Tab>
+  
+  <Tab title="Custom S3">
+    Connect your own Amazon S3 bucket.
+    
+    **Benefits**:
+    - Unlimited uploads
+    - Full control over your limits
+    - Your own AWS infrastructure
+  </Tab>
+  
+  <Tab title="Custom Cloudinary">
+    Connect your Cloudinary account.
+    
+    **Benefits**:
+    - Unlimited uploads
+    - Full control over your limits
+    - Advanced image optimization
+  </Tab>
+</Tabs>
+
+<Info>
+This feature is completely optional. The default service works perfectly even if you choose not to set anything up.
+</Info>
+
+### Current Configuration Status
+
+When configured, you can see:
+
+- **Provider Status**: Default or Custom (S3/Cloudinary)
+- **Upload Limit**: Unlimited (for custom) or plan-based (for default)
+- **Size Limit**: Maximum file size per upload (e.g., 5 megabytes)
+- **File Count**: Maximum number of files (e.g., 10 files)
+
+### S3 Configuration
+
+<Steps>
+  <Step title="Choose S3 Provider">
+    Select S3 as your upload service in the configuration panel.
+  </Step>
+  
+  <Step title="Enter Access Keys">
+    Provide your AWS access credentials:
+    - Access Key
+    - Secret Access Key
+  </Step>
+  
+  <Step title="Set Region">
+    Enter your AWS region (e.g., `eu-north-1`).
+  </Step>
+  
+  <Step title="Enter Bucket Name">
+    Provide your S3 bucket name (e.g., `directoryeasy-nocode`).
+  </Step>
+  
+  <Step title="CloudFront URL (Optional)">
+    Add your CloudFront URL if you use a CDN.
+    
+    **If left empty**: Your directory will use the direct S3 URL for images.
+  </Step>
+  
+  <Step title="Set Limits">
+    Control the size and count limits:
+    - Maximum file size per upload
+    - Maximum number of files per upload
+  </Step>
+  
+  <Step title="Save Configuration">
+    Click **Save Configuration** to apply your S3 settings.
+  </Step>
+</Steps>
+
+### Updating Configuration
+
+<Card title="Update Anytime" icon="pen">
+You can update your keys at any time by entering new values.
+
+Simply change the configuration values and save to apply the new settings.
+</Card>
+
+### S3 Configuration Example
+
+```plaintext
+Provider: S3
+Region: eu-north-1
+Bucket Name: directoryeasy-nocode
+CloudFront URL: (optional)
+Size Limit: 5 MB per file
+File Count: 10 files maximum
+Status: Custom (Unlimited uploads)
+```
+
+### Cloudinary Configuration
+
+<Steps>
+  <Step title="Choose Cloudinary Provider">
+    Select Cloudinary as your upload service.
+  </Step>
+  
+  <Step title="Enter Credentials">
+    Provide your Cloudinary account credentials.
+  </Step>
+  
+  <Step title="Configure Limits">
+    Set size and count limits for uploads.
+  </Step>
+  
+  <Step title="Save Configuration">
+    Apply your Cloudinary settings.
+  </Step>
+</Steps>
+
+## Integration Benefits
+
+<CardGroup cols={2}>
+  <Card title="AI Content Generation" icon="wand-sparkles">
+    Automatically generate high-quality descriptions for listings
+  </Card>
+  
+  <Card title="Professional Screenshots" icon="camera">
+    Capture website screenshots automatically for visual appeal
+  </Card>
+  
+  <Card title="Real-Time Webhooks" icon="bolt">
+    Get instant notifications for important directory events
+  </Card>
+  
+  <Card title="Google Sheets Sync" icon="table">
+    Manage listings easily with familiar spreadsheet interface
+  </Card>
+  
+  <Card title="Custom Media Storage" icon="cloud-arrow-up">
+    Unlimited uploads with your own S3 or Cloudinary account
+  </Card>
+  
+  <Card title="Full Control" icon="sliders">
+    Configure each integration to match your specific needs
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Advanced Customization" icon="code" href="/pages/advanced-customization">
+    Add custom sections and scripts to your directory
+  </Card>
+  
+  <Card title="Automation" icon="wand-magic-sparkles" href="/pages/automation">
+    Set up automated workflows for listings
+  </Card>
+  
+  <Card title="Miscellaneous Settings" icon="sliders" href="/pages/miscellaneous-settings">
+    Configure additional directory features
+  </Card>
+  
+  <Card title="Blog and Advertising" icon="newspaper" href="/pages/blog-and-ads">
+    Create content and manage advertising
+  </Card>
+</CardGroup>
+
